@@ -71,7 +71,7 @@ body {font-family: "Montserrat", sans-serif;}
     clear: both;
 }
 .layout--center {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 .layout--table {
@@ -199,10 +199,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .header_menu-b{ 
     width: 100%;
     text-align: center;
-    padding-top: 4%;
-    position: absolute;
-    top: 0;
-    z-index: 2000;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .header_menu-b li{
     display:inline; 
@@ -379,41 +377,85 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     border-bottom: 1px solid #000000;
     transition: all 1s;
 }
-
+/*아래로 왼쪽 메뉴바*/
 .content_nav{
-    width: 150px;
+    float: left;
+    width: 180px;
     margin-top: 200px;
     margin-left: 20px;
 }
 .content_nav li{
-    border: 2px solid #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
     margin-bottom: 10px;
 }
 
+.menu_serve{
+    max-height: 200px;
+    overflow-y: scroll;
+}
 .menu_serve a{
+    display:block;
+    margin-top:10px;
+    margin-left: 20px;
     font-size: 12px;
-    margin: 5px 0 0 20px;
     text-align: left;
 }
 .menu_button{
-    border-bottom: 2px solid #696969;
+    border-bottom: 1px solid #696969;
+    background-color: #ffff;
+    width: 175px;
+    padding: 10px 0;
     text-align: center;
-    margin:10px 0;
+    z-index: 999;
 }
 .menu_button button{
     float: right;
     margin:0 10px 0 45px;
 }
-.menu_serve a{
-    display:block;
-    margin: 10px 0;
+.serve_serve a{
+    font-size: 8px;
+    margin-left: 40px;
 }
+/*아래로 상단 타그스크롤링바*/
 
-
-
-
-
-
+.tag_scroll{
+    float: left;
+    vertical-align: middle;
+    width: 75%;
+    height: 40px;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #696969;
+}
+.tag_scroll p{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.tag_scroll ul{
+    float: right;
+}
+.tag_scroll li{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.product_background ul{
+    margin: 0 10px 0 210px;
+}
+.product{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product_g li img {
+    width: 100%;
+}
+.product_g p {
+    font-size: 12px;
+    margin-top: 5px;
+}
 
 
 
