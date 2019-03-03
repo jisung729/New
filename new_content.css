@@ -148,7 +148,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .icon_cat{top: 20px; width: 20px; right:  35px; position: fixed; }
 
 /*==========================================모바일위로=========================================>*/
-.samsan{ 
+.samsan{
+    display: none;
     position: relative;
 }
 .inputbox{
@@ -192,10 +193,43 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -ms-
     -o-
 }
-
+.asfaf{display: inline;}
 
 /*==========================================평상시아래로=======================================>*/
 
+.join_login{
+    width: 100%;
+    height:50px;
+    background-color: #000000;
+}
+.join_login img{
+    margin: 13px 0 13px 30px;
+    float: left;
+}
+.Search_dod{
+    margin-right: 250px;
+}
+.Search{
+    color:#ffff;
+    background-color: #000000;
+    border-bottom: 2px solid #ffff;
+    width: 200px;
+    height: 20px;
+}
+.dod{
+    width: 20px;
+    vertical-align: middle;
+}
+.jolo{
+    float: right;
+    margin: 15px 30px 15px 0;
+}
+.jolo li{float: left;}
+.jolo a{
+    color: #ffff;
+    font-size: 16px;
+    margin: 0 10px;
+}
 .header_menu-b{ 
     width: 100%;
     text-align: center;
@@ -377,11 +411,48 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     border-bottom: 1px solid #000000;
     transition: all 1s;
 }
+/*아래로 중간 discount 안내*/
+.product_discount{
+    margin: 50px 20px 0 20px;
+}
+.blue{
+    width: 492px;
+    height: 150px;
+    display: table;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    float: left;
+}
+.blue h3{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.pink{
+    width: 492px;
+    height: 150px;
+    display: table;
+    box-sizing: border-box;
+    border: 1px solid pink;
+}
+.pink h3{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product_name{
+    margin-top:100px;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 2px solid #696969;
+}
+
 /*아래로 왼쪽 메뉴바*/
 .content_nav{
     float: left;
     width: 180px;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 .content_nav li{
@@ -424,7 +495,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     vertical-align: middle;
     width: 75%;
     height: 40px;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #696969;
