@@ -3,11 +3,14 @@
     border: 0;
     margin: 0;
 }
-a {text-decoration: none;}
-li {list-style: none;}
-
-body {font-family: "Montserrat", sans-serif;}
-
+a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; vertical-align: baseline;
+    background-color: transparent; text-decoration: none; display: inline-block; }
+    img{vertical-align: bottom;}
+    ul li {list-style: none;}
+    
+    body {line-height: 1; font-family: "Montserrat", sans-serif;}
+    html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
+    
 /* =====================================
             GRID SYSTEM
 ===================================== */
@@ -264,20 +267,22 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 
 .hot2 {
     position: absolute; 
-    top: -35px;
-    left: 50%;
+    top: -30px;
+    left: 20px;
 }
 
 .oo {
-    position: absolute; 
-    width: 22px;
-    top:-80%;;
-    right: 50%;
-    margin-right: 15px;
- 
+    position: absolute;
+    width: 24px;
+    bottom: 20px;
+    right: 22px;
+    padding-top: 5px;
+    color: #ffffff;
+    background-color: #ff3000;
+    border-radius: 8px;
 }
 
-[class*="icon-"] {width: 22px; margin-left: -10px}
+[class*="icon-"] {width: 24px;}
 /*==========================================CAT호버 안댐=======================================>*/
 .cat_icon-2{position: relative;}
 .icon-2:hover .incat{display: block;}

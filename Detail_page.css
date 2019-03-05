@@ -8,7 +8,7 @@ background-color: transparent; text-decoration: none; display: inline-block; }
 img{vertical-align: bottom;}
 ul li {list-style: none;}
 
-body {line-height: 1; font-family: "Montserrat", sans-serif;}
+body {line-height: 1; font-family:"noto sans", "Montserrat", sans-serif;}
 html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 
 
@@ -430,178 +430,101 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     border-bottom: 1px solid #000000;
     transition: all 1s;
 }
-/*아래로 중간 discount 안내*/
-.product_discount{
-    margin: 50px 20px 0 20px;
-}
-.blue{
-    width: 492px;
-    height: 100px;
-    display: table;
-    background-color: blue;
-    float: left;
-}
-.blue h3{
-    color: #ffff;
-    font-weight: 300;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-.pink{
-    width: 492px;
-    height: 100px;
-    display: table;
-    background-color: pink;
-}
-.pink h3{
-    color: #ffff;
-    font-weight: 300;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
 
-.product_name{
-    margin-top:100px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 300;
-    border-bottom: 2px solid #e0e0e0;
+/*상세페이지*/
+.backg{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 5px 5px 0px 5px;;
+    display: inline-block;
+    border: 1px solid blue;
 }
-
-/*아래로 왼쪽 메뉴바*/
-.content_nav{
-    float: left;
-    width: 180px;
+.img_nav{float: left;}
+.img_nav li{
+    width: 75px;
     margin-top: 20px;
-    margin-left: 20px;
-}
-.content_nav li{
-    border: 1px solid #000000;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    border: 1px solid rgb(241,241,241);
 }
-.content_text{font-weight: bold;}
-.menu_button{ margin: 5px 0;}
-.menu_serve{
-    max-height: 200px;
-    overflow-y: scroll;
-}
-
-.menu_serve a{
-    color:#a2a2a2;
-    font-weight: 400;
-    display:block;
-    margin-top:10px;
-    margin-left: 20px;
-    font-size: 12px;
-    text-align: left;
-}
-.menu_button{
-    border-bottom: 1px solid #696969;
-    background-color: #ffff;
-    width: 175px;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 999;
-}
-.menu_button button{
-    float: right;
-    margin:0 10px 0 45px;
-}
-.serve_serve a{
-    font-size: 8px;
-    margin-left: 40px;
-}
-/*아래로 상단 타그스크롤링바*/
-
-.tag_scroll{
-    float: left;
-    vertical-align: middle;
-    width: 75%;
-    height: 45px;
-    margin: 17px 0 20px 20px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.input_box{
-    float: left;
-    
-}
-.tag_scroll li{
-    margin-top: 20px;
-    float: left;
-}
-.tag_scroll select{
-    width: 70px;
-    height: 20px;
-    margin-right: 10px;
-    border: 1px solid #e0e0e0;
-    background-color: #ffff;
-}
-.tag_scroll select:hover{
-    background-color: #e0e0e0;
-    color: #ffff;
-    transition: all 0.5s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-}
-.input_box-text p{
+.img_nav li:first-child{
     margin-top: 10px;
-    margin-left: 50px;
-    font-size: 12px;
 }
-.num {
-    margin-top:22px;
-    float: right;
-}
-.num li{
-    border: 1px solid #e0e0e0;
-    padding: 0 5px;
-    margin: 0 2px;
-    border-radius: 4px;
-}
-.num li:hover{
-    border: 1px solid #e0e0e0;
-    background-color: #e0e0e0; 
-    color: #ffff; 
-    border-radius: 4px;
-    transition: all 0.5s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-}
-.num li:first-child{
-    border: 0px solid #ffffff00;
-    border-radius: 10px 0 0 10px;
-}
-.num li:last-child{
-    border: 0px solid #ffffff00;
-    border-radius: 0 10px 10px 0;
-}
-.num a{
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 5px;
-}
-.product_background ul{
-    margin: 0 10px 0 210px;
-}
-.product{
-    margin-bottom: 10px;
-    text-align: center;
-}
-.product_g li img {
+.img_nav li img{
     width: 100%;
 }
-.product_g p {
-    font-size: 12px;
-    margin-top: 5px;
+.big_img{ margin-top: 10px; margin-bottom: 10px;}
+.big_img img{
+    width: 100%;
+    border: 1px solid;
 }
+.explanation{
+    margin-top: 15px;
+}
+.explanation h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.explanation li:first-child{
+    margin-top: 0;
+}
+.subtitle{
+    margin-bottom: 20px;
+    color:#b3b3b3;
+    font-weight: 400;
+    font-size: 12px;
+}
+.discunt{
+    background-color: rgb(241,241,241);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+
+}
+.discunt p{
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.Country_of_origin{
+    font-size: 12px;
+}
+
+[id*=se_]{
+    border: 1px solid #000000;
+    width: 100px;
+    height: 20px;;
+}
+.amount{
+    float: left;
+    padding-right: 10px;
+}
+.amount p{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.size {
+    float: left;
+}
+.size p{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.size_guide{
+    float: left;
+}
+.size_guide a{
+    margin-top: 23px;
+    margin-left: 10px;
+    font-size: 9px;
+}
+.size_guide a:hover{
+    color: red;
+}
+/**/
+
 
 
 

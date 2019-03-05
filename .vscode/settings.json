@@ -1,3 +1,6 @@
 {
-    "open-in-browser.default": "chrome"
+    "open-in-browser.default": "chrome",
+    "editor.fontSize": 14,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on"
 }
