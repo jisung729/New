@@ -1,0 +1,79 @@
+$gid_bd:#cccccc;
+$gid_t:#cccccc;
+.texta{
+    width: 550px;
+    margin: 0 auto;
+    .mid_logo{
+      width: 200px;
+    }
+    ul{
+      margin-top: 40px;
+      border: 1px solid $gid_bd;
+    }
+    li{
+      height: 50px;
+      margin: 10px;
+      vertical-align: middle;
+      border-bottom: 1px solid $gid-bd;
+    }
+    select{
+      width:20%;
+      font-size: 16px;
+      background-color: transparent;
+    }
+    input{
+      height: 80%;
+      font-size: 16px;
+      text-align: center;
+    }
+}
+.email_input_wrap{
+  img{
+    width: 30px;
+    vertical-align: middle;
+  }
+  .email{
+    width: 33%;
+    color:$gid_t;
+  }
+}
+
+.user_password_wrap{
+      position: relative;
+  img{
+      width: 30px;
+      vertical-align: middle;
+  }
+  .password{
+    width: 89%;
+    margin: 0 10px;
+  }
+  .user_password{
+    color:$gid_t;
+    position: absolute;
+    top: 13px;
+    left: 100px;
+    }
+  span{
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+}
+.user_name_wrap{
+  position: relative;
+  img{
+    width: 30px;
+    vertical-align: middle;
+  }
+  .name{
+    width: 89%;
+    margin: 0 10px;
+  }
+  .user_name{
+    color:$gid_t;
+    position: absolute;
+    top: 13px;
+    left: 100px;
+    }
+}

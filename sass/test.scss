@@ -1,0 +1,16 @@
+
+$color-primary: #e96900;
+$url-images: "/assets/images/";
+$w: 200px;
+
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    &#box2{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+    }
+}

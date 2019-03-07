@@ -1,0 +1,12 @@
+#box1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+#box1#box2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,91 @@
+.texta {
+  width: 550px;
+  margin: 0 auto;
+}
+
+.texta .mid_logo {
+  width: 200px;
+}
+
+.texta ul {
+  margin-top: 40px;
+  border: 1px solid #cccccc;
+}
+
+.texta li {
+  height: 50px;
+  margin: 10px;
+  vertical-align: middle;
+  border-bottom: 1px solid #cccccc;
+}
+
+.texta select {
+  width: 20%;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.texta input {
+  height: 80%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.email_input_wrap img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.email_input_wrap .email {
+  width: 33%;
+  color: #cccccc;
+}
+
+.user_password_wrap {
+  position: relative;
+}
+
+.user_password_wrap img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.user_password_wrap .password {
+  width: 89%;
+  margin: 0 10px;
+}
+
+.user_password_wrap .user_password {
+  color: #cccccc;
+  position: absolute;
+  top: 13px;
+  left: 100px;
+}
+
+.user_password_wrap span {
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.user_name_wrap {
+  position: relative;
+}
+
+.user_name_wrap img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.user_name_wrap .name {
+  width: 89%;
+  margin: 0 10px;
+}
+
+.user_name_wrap .user_name {
+  color: #cccccc;
+  position: absolute;
+  top: 13px;
+  left: 100px;
+}
+/*# sourceMappingURL=join.css.map */
