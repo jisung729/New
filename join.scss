@@ -1,6 +1,7 @@
 $gid_bd:#cccccc;
 $gid_t:#cccccc;
-.texta{
+
+.join_table{
     width: 550px;
     margin: 0 auto;
     .mid_logo{
@@ -16,6 +17,8 @@ $gid_t:#cccccc;
       vertical-align: middle;
       border-bottom: 1px solid $gid-bd;
     }
+    li:first-child{height: 46px;}
+    li:last-child{border-bottom: 0px; height: 42px;}
     select{
       width:20%;
       font-size: 16px;
@@ -26,7 +29,7 @@ $gid_t:#cccccc;
       font-size: 16px;
       text-align: center;
     }
-}
+
 .email_input_wrap{
   img{
     width: 30px;
@@ -35,6 +38,9 @@ $gid_t:#cccccc;
   .email{
     width: 33%;
     color:$gid_t;
+  }
+  #email{
+    font-size: 14px;
   }
 }
 
@@ -52,7 +58,7 @@ $gid_t:#cccccc;
     color:$gid_t;
     position: absolute;
     top: 13px;
-    left: 100px;
+    left: 70px;
     }
   span{
     margin-left: 5px;
@@ -74,6 +80,121 @@ $gid_t:#cccccc;
     color:$gid_t;
     position: absolute;
     top: 13px;
-    left: 100px;
+    left: 70px;
     }
+}
+.user_number_wrap{
+  position: relative;
+  img{
+    width: 30px;
+    vertical-align: middle;
+  }
+  .number{
+    width: 89%;
+    margin: 0 10px;
+  }
+  .user_number{
+    color:$gid_t;
+    position: absolute;
+    top: 13px;
+    left: 70px;
+  }
+  span{
+      margin-left: 5px;
+      vertical-align: middle;
+      font-size: 12px;
+  }
+}
+.user_birthday_wrap{
+  position: relative;
+  img{
+    width: 30px;
+    vertical-align: middle;
+  }
+  .birthday{
+    width: 89%;
+    margin: 0 10px;
+  }
+  .user_birthday{
+    color:$gid_t;
+    position: absolute;
+    top: 13px;
+    left: 70px;
+  }
+}
+
+.user_gender_wrap{
+  position: relative;
+  img{
+    margin-top: 5px;
+    width: 30px;
+  }
+  .user_gender{
+    color:$gid_t;
+    position: absolute;
+    top: 13px;
+    left: 70px;
+    .co{
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+  .user_gender_b{
+    position: absolute;
+    top: 13px;
+    left: 130px;
+  }
+  .gender-b{
+    width: 45px;
+    position: absolute;
+  }
+  .gender-b-text{
+    margin-left: 20px;
+    vertical-align: bottom;
+    font-size: 14px;
+  }
+
+  .user_gender_g{
+    position: absolute;
+    top: 13px;
+    left: 230px;
+  }
+  
+  .gender-g{
+    width: 45px;
+    display: block;
+    position: absolute;
+  }
+  .gender-g-text{
+    margin-left: 20px;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+}
+}
+
+.agreement_check{
+  margin-top: 20px;
+  ul{
+    width: 550px;
+    margin:  0 auto;
+    border: 1px solid $gid_bd;
+  }
+  li{
+    padding: 10px;
+    height: 20px;
+    .checkbox{ 
+      width: 30px; 
+      height: 30px;
+      vertical-align: middle;
+    }
+    p{
+
+    }
+  }
+  li:first-child{
+    background-color: $gid_bd; 
+    height: 45px;
+  }
+  
 }

@@ -173,7 +173,7 @@
 </header>
 
 <middle class="clearfix">
-    <div class="texta layout--center">
+    <div class="join_table">
         <img src="img/moon-b.png" class="mid_logo">
         <ul>
             <li class="email_input_wrap">
@@ -212,20 +212,47 @@
                         가입자 이름
                 </label>
             </li>
-            <li>
-                <input type="number" name="핸드폰번호" class="number">
+            <li class="user_number_wrap">
+                <img src="img/cat-b.png">
+                <input type="text" name="핸드폰번호" class="number">
+                <label for="user_number" class="user_number">
+                    가입자 전화번호<span>" - " 없이 입력해주세요.</span>
+                </label>
             </li>
-            <li>
-                <input type="number" name="birthday" class="birthday">
+            <li class="user_birthday_wrap">
+                <img src="img/cat-b.png">
+                <input type="text" name="birthday" class="birthday">
+                <label for="user_birthday" class="user_birthday">
+                        생년월일<span>8자리 숫자로 입력</span> <span class="ex">(ex> 19890729)</span>
+                    </label>
             </li>
-            <li>
-                <label for="gender"></label>
+            <li class="user_gender_wrap">
+                <img src="img/cat-b.png">
+                <span class="user_gender">성별<p class="co">(선택)</p></span>
+                <label for="user_gender" class="user_gender_b">
+                    <input type="radio" name="gender" class="gender-b">
+                    <span class="gender-b-text">
+                        남자
+                    </span>
+                </label>
+
+                <label for="user_gender" class="user_gender_g">
+                    <input type="radio" name="gender" class="gender-g">
+                    <span class="gender-g-text">
+                            여자
+                    </span>
+                </label>
             </li>
         </ul>
     </div>
-    <div class="">
+    <div class="agreement_check">
         <ul>
-            <li></li>
+            <li>
+                <span class="agreement_mein_text">
+                    <input type="checkbox" name="checkbox" class="checkbox">
+                    전체동의
+                </span>
+            </li>
             <li></li>
             <li></li>
             <li></li>

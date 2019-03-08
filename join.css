@@ -1,91 +1,234 @@
-.texta {
+.join_table {
   width: 550px;
   margin: 0 auto;
 }
 
-.texta .mid_logo {
+.join_table .mid_logo {
   width: 200px;
 }
 
-.texta ul {
+.join_table ul {
   margin-top: 40px;
   border: 1px solid #cccccc;
 }
 
-.texta li {
+.join_table li {
   height: 50px;
   margin: 10px;
   vertical-align: middle;
   border-bottom: 1px solid #cccccc;
 }
 
-.texta select {
+.join_table li:first-child {
+  height: 46px;
+}
+
+.join_table li:last-child {
+  border-bottom: 0px;
+  height: 42px;
+}
+
+.join_table select {
   width: 20%;
   font-size: 16px;
   background-color: transparent;
 }
 
-.texta input {
+.join_table input {
   height: 80%;
   font-size: 16px;
   text-align: center;
 }
 
-.email_input_wrap img {
+.join_table .email_input_wrap img {
   width: 30px;
   vertical-align: middle;
 }
 
-.email_input_wrap .email {
+.join_table .email_input_wrap .email {
   width: 33%;
   color: #cccccc;
 }
 
-.user_password_wrap {
+.join_table .email_input_wrap #email {
+  font-size: 14px;
+}
+
+.join_table .user_password_wrap {
   position: relative;
 }
 
-.user_password_wrap img {
+.join_table .user_password_wrap img {
   width: 30px;
   vertical-align: middle;
 }
 
-.user_password_wrap .password {
+.join_table .user_password_wrap .password {
   width: 89%;
   margin: 0 10px;
 }
 
-.user_password_wrap .user_password {
+.join_table .user_password_wrap .user_password {
   color: #cccccc;
   position: absolute;
   top: 13px;
-  left: 100px;
+  left: 70px;
 }
 
-.user_password_wrap span {
+.join_table .user_password_wrap span {
   margin-left: 5px;
   vertical-align: middle;
   font-size: 12px;
 }
 
-.user_name_wrap {
+.join_table .user_name_wrap {
   position: relative;
 }
 
-.user_name_wrap img {
+.join_table .user_name_wrap img {
   width: 30px;
   vertical-align: middle;
 }
 
-.user_name_wrap .name {
+.join_table .user_name_wrap .name {
   width: 89%;
   margin: 0 10px;
 }
 
-.user_name_wrap .user_name {
+.join_table .user_name_wrap .user_name {
   color: #cccccc;
   position: absolute;
   top: 13px;
-  left: 100px;
+  left: 70px;
+}
+
+.join_table .user_number_wrap {
+  position: relative;
+}
+
+.join_table .user_number_wrap img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.join_table .user_number_wrap .number {
+  width: 89%;
+  margin: 0 10px;
+}
+
+.join_table .user_number_wrap .user_number {
+  color: #cccccc;
+  position: absolute;
+  top: 13px;
+  left: 70px;
+}
+
+.join_table .user_number_wrap span {
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.join_table .user_birthday_wrap {
+  position: relative;
+}
+
+.join_table .user_birthday_wrap img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.join_table .user_birthday_wrap .birthday {
+  width: 89%;
+  margin: 0 10px;
+}
+
+.join_table .user_birthday_wrap .user_birthday {
+  color: #cccccc;
+  position: absolute;
+  top: 13px;
+  left: 70px;
+}
+
+.join_table .user_gender_wrap {
+  position: relative;
+}
+
+.join_table .user_gender_wrap img {
+  margin-top: 5px;
+  width: 30px;
+}
+
+.join_table .user_gender_wrap .user_gender {
+  color: #cccccc;
+  position: absolute;
+  top: 13px;
+  left: 70px;
+}
+
+.join_table .user_gender_wrap .user_gender .co {
+  text-align: center;
+  font-size: 12px;
+}
+
+.join_table .user_gender_wrap .user_gender_b {
+  position: absolute;
+  top: 13px;
+  left: 130px;
+}
+
+.join_table .user_gender_wrap .gender-b {
+  width: 45px;
+  position: absolute;
+}
+
+.join_table .user_gender_wrap .gender-b-text {
+  margin-left: 20px;
+  vertical-align: bottom;
+  font-size: 14px;
+}
+
+.join_table .user_gender_wrap .user_gender_g {
+  position: absolute;
+  top: 13px;
+  left: 230px;
+}
+
+.join_table .user_gender_wrap .gender-g {
+  width: 45px;
+  display: block;
+  position: absolute;
+}
+
+.join_table .user_gender_wrap .gender-g-text {
+  margin-left: 20px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.agreement_check {
+  margin-top: 20px;
+}
+
+.agreement_check ul {
+  width: 550px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+}
+
+.agreement_check li {
+  padding: 10px;
+  height: 20px;
+}
+
+.agreement_check li .checkbox {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.agreement_check li:first-child {
+  background-color: #cccccc;
+  height: 45px;
 }
 /*# sourceMappingURL=join.css.map */
