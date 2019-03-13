@@ -537,6 +537,139 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     float: left;
 }
 .box_1{margin-right: 10px;}
+.position{position: relative;}
+.join_backg{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,.8);
+}
+.join_table {
+    position: absolute;
+    background-color: #ffffff;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+  }
+.login_strong{
+    font-size: 20px;
+}
+  .join_table ul {
+    margin-top: 40px;
+    border: 1px solid #cccccc;
+  }
+  
+  .join_table li {
+    height: 50px;
+    border-top: 1px solid #cccccc;
+  }
+  
+  .join_table li:first-child {
+    border-top: 0px;
+  }
+  
+  .join_table select {
+    width: 20%;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  
+  .join_table input {
+    height: 40px;
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .email_input_wrap img {
+    width: 30px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  .email_input_wrap .email {
+    width: 89%;
+    color: #cccccc;
+  }
+  
+  .email_input_wrap #email {
+    font-size: 14px;
+  }
+  
+  .user_password_wrap {
+    position: relative;
+  }
+  
+  .user_password_wrap img {
+    width: 30px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  .password {
+    width: 89%;
+    margin: 10px;
+    vertical-align: middle;
+  }
+  
+  .user_password {
+    color: #cccccc;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    margin: 10px 0;
+  }
+.join_id_password a{
+    font-size: 14px;
+    padding: 0 10px;;
+    border-right: 1px solid;
+}
+.join_id_password a:last-child{
+    border-right: 0px;
+}
+.no_join{
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+}
+.no_join a{
+    font-size: 14px;
+    margin-top: 13px;
+}
+.bigtext{
+    display: inline-block;
+    font-size: 14px; 
+    margin: 10px 5px 5px 5px;
+}
+.no_join_contract_text{
+    font-size: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-height: 100px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+.no_join_contract{
+    display: block;
+    width: 400px;
+    max-height: 200px;
+    margin: 0 auto;
+    
+}
+
+
+
+
+
+
+
 .so{
     margin-top: 20px;
 }

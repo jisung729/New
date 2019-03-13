@@ -1,10 +1,15 @@
+.mid_logo {
+  width: 200px;
+  margin: 50px auto 0 auto;
+}
+
+.mid_logo img {
+  width: 200px;
+}
+
 .join_table {
   width: 550px;
   margin: 0 auto;
-}
-
-.join_table .mid_logo {
-  width: 200px;
 }
 
 .join_table ul {
@@ -75,132 +80,132 @@
   left: 70px;
 }
 
-.join_table .user_password_wrap span {
+.join_table span {
   margin-left: 5px;
   vertical-align: middle;
   font-size: 12px;
 }
 
-.join_table .user_name_wrap {
+.user_name_wrap {
   position: relative;
 }
 
-.join_table .user_name_wrap img {
+.user_name_wrap img {
   width: 30px;
   vertical-align: middle;
 }
 
-.join_table .user_name_wrap .name {
+.user_name_wrap .name {
   width: 89%;
   margin: 0 10px;
 }
 
-.join_table .user_name_wrap .user_name {
+.user_name_wrap .user_name {
   color: #cccccc;
   position: absolute;
   top: 13px;
   left: 70px;
 }
 
-.join_table .user_number_wrap {
+.user_number_wrap {
   position: relative;
 }
 
-.join_table .user_number_wrap img {
+.user_number_wrap img {
   width: 30px;
   vertical-align: middle;
 }
 
-.join_table .user_number_wrap .number {
+.user_number_wrap .number {
   width: 89%;
   margin: 0 10px;
 }
 
-.join_table .user_number_wrap .user_number {
+.user_number_wrap .user_number {
   color: #cccccc;
   position: absolute;
   top: 13px;
   left: 70px;
 }
 
-.join_table .user_number_wrap span {
+.user_number_wrap span {
   margin-left: 5px;
   vertical-align: middle;
   font-size: 12px;
 }
 
-.join_table .user_birthday_wrap {
+.user_birthday_wrap {
   position: relative;
 }
 
-.join_table .user_birthday_wrap img {
+.user_birthday_wrap img {
   width: 30px;
   vertical-align: middle;
 }
 
-.join_table .user_birthday_wrap .birthday {
+.user_birthday_wrap .birthday {
   width: 89%;
   margin: 0 10px;
 }
 
-.join_table .user_birthday_wrap .user_birthday {
+.user_birthday_wrap .user_birthday {
   color: #cccccc;
   position: absolute;
   top: 13px;
   left: 70px;
 }
 
-.join_table .user_gender_wrap {
+.user_gender_wrap {
   position: relative;
 }
 
-.join_table .user_gender_wrap img {
+.user_gender_wrap img {
   margin-top: 5px;
   width: 30px;
 }
 
-.join_table .user_gender_wrap .user_gender {
+.user_gender_wrap .user_gender {
   color: #cccccc;
   position: absolute;
   top: 13px;
   left: 70px;
 }
 
-.join_table .user_gender_wrap .user_gender .co {
+.user_gender_wrap .user_gender .co {
   text-align: center;
   font-size: 12px;
 }
 
-.join_table .user_gender_wrap .user_gender_b {
+.user_gender_wrap .user_gender_b {
   position: absolute;
   top: 13px;
   left: 130px;
 }
 
-.join_table .user_gender_wrap .gender-b {
+.user_gender_wrap .gender-b {
   width: 45px;
   position: absolute;
 }
 
-.join_table .user_gender_wrap .gender-b-text {
+.user_gender_wrap .gender-b-text {
   margin-left: 20px;
   vertical-align: bottom;
   font-size: 14px;
 }
 
-.join_table .user_gender_wrap .user_gender_g {
+.user_gender_wrap .user_gender_g {
   position: absolute;
   top: 13px;
   left: 230px;
 }
 
-.join_table .user_gender_wrap .gender-g {
+.user_gender_wrap .gender-g {
   width: 45px;
   display: block;
   position: absolute;
 }
 
-.join_table .user_gender_wrap .gender-g-text {
+.user_gender_wrap .gender-g-text {
   margin-left: 20px;
   vertical-align: middle;
   font-size: 14px;
@@ -210,25 +215,102 @@
   margin-top: 20px;
 }
 
-.agreement_check ul {
+.agreement_check .list_check_group {
   width: 550px;
+  height: 100%;
   margin: 0 auto;
   border: 1px solid #cccccc;
 }
 
-.agreement_check li {
+.agreement_check .list_check {
   padding: 10px;
-  height: 20px;
+  height: 100%;
 }
 
-.agreement_check li .checkbox {
+.agreement_check .list_check .checkbox {
   width: 30px;
   height: 30px;
   vertical-align: middle;
 }
 
-.agreement_check li:first-child {
+.agreement_check .list_check a {
+  float: right;
+  vertical-align: middle;
+  font-size: 9px;
+  border: 1px solid #cccccc;
+  padding: 6px 6px 4px 6px;
+  border-radius: 10px;
+}
+
+.agreement_check .list_check .redt {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 12px;
+  color: red;
+}
+
+.agreement_check .list_check .svt {
+  width: 250px;
+  margin-left: 50px;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.agreement_check .list_check:first-child {
   background-color: #cccccc;
-  height: 45px;
+  height: 30px;
+}
+
+.click_onoff_1 {
+  display: none;
+  margin-left: 20px;
+}
+
+.click_onoff_1 .click {
+  margin-top: 10px;
+  border: 1px solid #cccccc;
+}
+
+.click_onoff_1 .click .click_group {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.click_onoff_1 .click .click_group:last-child {
+  border-bottom: 0px;
+}
+
+.click_onoff_1 .click h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.click_onoff_1 .click p {
+  font-size: 10px;
+}
+
+.click_onoff_2 {
+  display: none;
+  margin-left: 20px;
+}
+
+.no_check {
+  width: 500px;
+  font-size: 12px;
+  margin: 5px auto 0 auto;
+  color: #cccccc;
+}
+
+.join_backg {
+  width: 180px;
+  margin: 50px auto 0 auto;
+}
+
+.join_backg .do_join {
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
 }
 /*# sourceMappingURL=join.css.map */

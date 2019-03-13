@@ -1,12 +1,15 @@
 $gid_bd:#cccccc;
 $gid_t:#cccccc;
-
+.mid_logo{
+  width: 200px;
+  margin: 50px auto 0 auto;
+}
+.mid_logo img{
+  width: 200px;
+}
 .join_table{
     width: 550px;
     margin: 0 auto;
-    .mid_logo{
-      width: 200px;
-    }
     ul{
       margin-top: 40px;
       border: 1px solid $gid_bd;
@@ -54,12 +57,14 @@ $gid_t:#cccccc;
     width: 89%;
     margin: 0 10px;
   }
+
   .user_password{
     color:$gid_t;
     position: absolute;
     top: 13px;
     left: 70px;
-    }
+  }
+  }
   span{
     margin-left: 5px;
     vertical-align: middle;
@@ -171,30 +176,84 @@ $gid_t:#cccccc;
     font-size: 14px;
   }
 }
-}
+
 
 .agreement_check{
   margin-top: 20px;
-  ul{
+  .list_check_group{
     width: 550px;
+    height: 100%;
     margin:  0 auto;
     border: 1px solid $gid_bd;
   }
-  li{
+  .list_check{
     padding: 10px;
-    height: 20px;
+    height: 100%;
     .checkbox{ 
       width: 30px; 
       height: 30px;
       vertical-align: middle;
     }
-    p{
-
+    a{
+      float: right;
+      vertical-align: middle;
+      font-size: 9px; 
+      border: 1px solid $gid_bd;
+      padding: 6px 6px 4px 6px;
+      border-radius: 10px;
     }
+    .redt{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      font-size: 12px;
+      color: red;
+    }
+    .svt{ width: 250px; margin-left: 50px;  font-size: 12px; color:$gid_bd;}
   }
-  li:first-child{
+  .list_check:first-child{
     background-color: $gid_bd; 
-    height: 45px;
+    height: 30px;
   }
-  
 }
+.click_onoff_1{ 
+  display: none;
+  margin-left: 20px;
+.click{
+  margin-top: 10px;
+  border: 1px solid $gid_bd;
+
+.click_group{
+  padding:10px;
+  border-bottom: 1px solid $gid_bd;
+}
+.click_group:last-child{
+  border-bottom: 0px;
+}
+  h4{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 10px;
+  }
+}
+}
+.click_onoff_2{display: none; margin-left: 20px; }
+.no_check{
+  width: 500px;
+  font-size: 12px; 
+  margin: 5px auto 0 auto;
+  color: $gid_t;
+}
+.join_backg{
+  width: 180px;
+  margin: 50px auto 0 auto;
+.do_join{
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  }
+}
+
