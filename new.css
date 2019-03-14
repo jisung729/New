@@ -97,23 +97,15 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
          design
 ===================================== */
 
-html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; overflow-x: hidden;}
+html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; overflow-x: hidden;position: relative;}
 
 .slide{width: 100%; height:1000px;}
-.slide ul{width:calc(100% * 4);display:flex;animation:slide 8s infinite;}
+.slide ul{width:calc(100% * 4);display:flex;animation:slide 12s infinite;}
 .slide li{width:calc(100% / 4);height:1000px;}
 .slide li:nth-child(1){
     background-image: url("img/background-slide-1.jpg"); 
     background-size: cover;
     background-position: top;
-}
-.mein-text1{
-    margin-left: 10%;
-    margin-top: 25%;
-}
-.mein-text2{
-    margin-left: 10%;
-    margin-top: 2%;
 }
 .slide li:nth-child(2){
     background-image: url("img/background-slide-2.jpg"); 
@@ -130,29 +122,29 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     background-size: cover;
     background-position: top;
 }
+
 @keyframes slide {
   0% {margin-left:0;}
-  10% {margin-left:0;}
+  10% {margin-left:-50%;}
   25% {margin-left:-100%;}
-  35% {margin-left:-100%;}
+  35% {margin-left:-150%;}
   50% {margin-left:-200%;}
-  60% {margin-left:-200%;}
+  60% {margin-left:-250%;}
   75% {margin-left:-300%;}
-  85% {margin-left:-300%;}
-  100% {margin-left:0;}
+  85% {margin-left:-350%;}
+  100% {margin-left:-400%;}
     -webkit-
     -moz-
     -ms-
     -o-
 }
-
-/*==========================================모바일아래로=========================================>*/
+/*= 1024 미만 상당메뉴바 반응형 적용되있음.*/
 .width1024_w{display: none; }
 
 .header_menu-w ul {position: relative;}
 
 .header_menu-w li{
-    position:absolute;
+    position: fixed;
     width: 100%;
     height: 50px;
     top: 0px;
@@ -197,60 +189,162 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .icon_hat{top: 20px; width: 20px; right:  98px; position: fixed;}
 .icon_cat{top: 20px; width: 20px; right:  35px; position: fixed; }
 
-/*==========================================모바일위로=========================================>*/
-.samsan{ 
-    position: relative;
-}
-.inputbox{
-    width: 240px;
-    margin: 10px 5px;
-    background-color: #1e1e1e;
-    border: 2px solid #2b2b2b;
-    box-sizing: border-box;
-}/* 스크립트 작업시 메뉴 열었을때 메뉴바 제외하고 페이드 아웃 0.5~0.8 정도 */
+/*모바일&태블릿 모드에서 햄벅 클릭시 매뉴바*/
 
-.inputbox img{ left:210px; top: 20px;}
-
-.samsan-menu{
-    position: absolute;
-    width: 250px;
-    height: 3938px;
-    background-color: #000000;
-    z-index: 9999;    
-}
-.samsan-menu input{
-    width: 180px;
-    padding: 5px 0;
-    margin: 5px;
-    color: #ffff;
-    background-color: #1e1e1e;
-}
-
-.samsan-menu a{
+.samsna_backg{
     display: block;
-    font-size: 18px;
-    color:#cfcfcf;
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 2px solid #2b2b2b;   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 3900px; 
+    z-index: 5555;
+    background-color: rgba(0,0,0,.8);
+
 }
-.samsan-menu a:hover{
+.content_background{
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    z-index: 4444;
+}
+.content_nav{
+    float: left;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.content_nav li{
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.content_text{font-weight: bold; color: #ffffff;}
+.menu_button{ margin: 5px 1px;}
+.menu_serve{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.menu_serve a{
+    color:#ffffff;;
+    font-weight: 400;
+    display:block;
+    margin-top:10px;
+    margin-left: 20px;
+    font-size: 12px;
+    text-align: left;
+}
+.menu_button{
+    border-bottom: 1px solid #cccccc;
+    width: 175px;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999;
+}
+.menu_button button{
+    float: right;
+    margin:0 10px 0 45px;
+}
+.serve_serve a{
+    font-size: 8px;
+    margin-left: 40px;
+}
+/*아래로 상단 타그스크롤링바*/
+
+.tag_scroll{
+    float: left;
+    vertical-align: middle;
+    width: 75%;
+    height: 45px;
+    margin: 17px 0 20px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.input_box{
+    float: left;
+    
+}
+.tag_scroll li{
+    margin-top: 20px;
+    float: left;
+}
+.tag_scroll select{
+    width: 70px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffff;
+}
+.tag_scroll select:hover{
+    background-color: #e0e0e0;
     color: #ffff;
-    transition: all 1s;
+    transition: all 0.5s;
     -webkit-
     -moz-
     -ms-
     -o-
 }
-
-
+.input_box-text p{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 12px;
+}
+.num {
+    margin-top:22px;
+    float: right;
+}
+.num li{
+    border: 1px solid #e0e0e0;
+    padding: 0 5px;
+    margin: 0 2px;
+    border-radius: 4px;
+}
+.num li:hover{
+    border: 1px solid #e0e0e0;
+    background-color: #e0e0e0; 
+    color: #ffff; 
+    border-radius: 4px;
+    transition: all 0.5s;
+    -webkit-
+    -moz-
+    -ms-
+    -o-
+}
+.num li:first-child{
+    border: 0px solid #ffffff00;
+    border-radius: 10px 0 0 10px;
+}
+.num li:last-child{
+    border: 0px solid #ffffff00;
+    border-radius: 0 10px 10px 0;
+}
+.num a{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.product_background ul{
+    margin: 0 10px 0 210px;
+}
+.product{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product_g li img {
+    width: 100%;
+}
+.product_g p {
+    font-size: 12px;
+    margin-top: 5px;
+}
 /*==========================================평상시아래로=======================================>*/
 
 .header_menu-b{ 
     width: 100%;
     text-align: center;
     padding-top: 4%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 2000;
 }
@@ -321,77 +415,49 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .doun_1:hover{background-color: crimson;}
 .doun_2{ margin: 50px 19px; float: right; letter-spacing: 0.025em;}
 .doun_2:hover{background-color:cornflowerblue;}
-/*==========================================평상시메뉴=======================================>*/
-/* 작업해야함.
-[class*="mein-"] { 
-                position: absolute; 
-                top:0; 
-                left: 0; 
-                display: none;
-}*/
+
+/*==========1024 shop 호버 미니메뉴 3월14일 코드간소화작업완료==========*/
 
 .icon-3{margin-left: -35px;}
 
-.shop{position: relative; }
-.shop:hover .hover_w{
-    display: inline-block;
-    transform: 
-}
+.shop{position: relative;}
 
-.hover_w{
-    width: 700px;
-    height: 380px;
+.hover_backg{
+    width: 650px;
     background-color: rgba(255,255,255,0.8);
-    top: 30px;
-    left: -240px;
+    top: -500px;
+    left: 660px;
+    border-radius: 4px;
     position: absolute;
-}
+}/* top: 30px; left: -250px; SHOP 호버시 화면상에 옆에 좌표로 노출*/
 
 .hover_img{
-    position: absolute;
-    top: 25px;
-    right: 50px;
+    float: left;
 }
 .hover_img img{
     display: block;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 200px;
+    margin: 15px 0;
+    width: 350px;
+    height: 230px;
 }
 .hover_img a{
     font-size: 20px;
     color: #000000;
 }
-.hover_w-b{
-    top: 25px;
-    left: 25px;
-    position: absolute;
-    display: inline-block;
-}
-.hover_w-b a{
-    width: 50px;
-    font-size: 12px;
-    padding: 10px;
-    display: block;
-    color: #000000;
-}
-.hover_w-b a:hover{
-    background-color: rgba(0,0,0,0.5);
-    color: #ffffff;
-    border-radius: 10px;
-    transition: all 1s;
+.hover_img a:hover{
+    color: #ff5d5d;
+    transition: all 0.3s;
     -webkit-
     -moz-
     -ms-
     -o-
 }
-.hover_w-w{
-    top: 25px;
-    left: 125px;
-    position: absolute;
-    display: inline-block;
+[class*="lainrkr_"]{
+    float: left;
+    margin: 10px;
 }
-.hover_w-w a{
+
+.hover_href_text a{
     width: 50px;
     font-size: 12px;
     padding: 10px;
@@ -399,7 +465,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     display: block;
     color: #000000;
 }
-.hover_w-w a:hover{
+.hover_href_text a:hover{
     background-color: rgba(0,0,0,0.5);
     color: #ffffff;
     border-radius: 10px;
@@ -409,40 +475,22 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -ms-
     -o-
 }
+
 .hover_life{
     top: 25px;
     left: 225px;
+    height: 100%;;
     position: absolute;
     display: inline-block;
 }
-/*트랜스폼 트랜지션 공부후 수정*/
-.hover_life a{
-    width: 50px;
-    font-size: 12px;
-    padding: 10px;
-    margin-bottom: 1px;
-    display: block;
-    color: #000000;
-    
-}
-.hover_life a:hover{
-    box-sizing: border-box;
-    border-bottom: 1px solid #000000;
-    transition: all 1s;
-}
 
-
-
-/*.hover_w div a:last-child{
-    border-right: 2px solid #ffff;
-}*/
-/*===================================================================================>*/
+/*메인 아래 컨탠츠 3월14일 오차1픽셀 잡았음. 반응형 에서 다시 오차발생*/
 
 
 .content__box{position: relative;}
 .content__img--box img{ 
     width: 100%;
-    box-sizing: border-box;
+    height: 100%;
 }
 
 [class*="content-"]{
@@ -456,7 +504,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 [class*="content-"]:hover [class*="content-text--"]{
     opacity: 1; 
-    top: 85%;
+    bottom: 0px;
     -webkit-
     -moz-
     -ms-
@@ -467,11 +515,11 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     display: table;
     position: absolute; 
     width: 100%;
-    padding-bottom: 19%;
+    height: 55px;
     background-color: #ffff;
-    top:85%;
+    right: 0;
+    bottom:0px;
     opacity: 0;
-    
     box-sizing: border-box;
     transition: all 1s;
                 -webkit-
@@ -549,7 +597,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 /*======================================================================================*/
 
 .box_1{width: 50%; height: 500px; float: left;}
-.box_1 h1{
+.box_1 strong{
     font-size: 64px;
     color:black;
 }
@@ -573,7 +621,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -ms-
     -o-
 }
-.big_1-ling h1:hover{
+.big_1-ling strong:hover{
     color: crimson;
     transition: all 1s;
     -webkit-
@@ -692,7 +740,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -ms-
     -o-
 }
-.big_6-ling h1:hover{
+.big_6-ling strong:hover{
     color: crimson;
     transition: all 1s;
     -webkit-
@@ -701,7 +749,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -o-
 
 }
-.box_6 h1{
+.box_6 strong{
     font-size: 64px;
     color:black;
 }
@@ -864,41 +912,33 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     color: aliceblue;
 }
 
-.boxbox{
+.email_img{
     width: 300px; 
     height: 50px;
-    left: 50%;
-    margin-left: -150px;
-    position: relative;
+    margin: 0 auto;
     background-color: #343434;
 }
-
-.boxbox_img{
+.email_img_ct{
+    padding-top: 14px;
+}
+.email_img img{
     width: 25px;
     height: 20px;
-    margin-left: -15%;
-    margin-right: 2%;
-    background-image: url(img/e.png);
-    background-size: cover;
-    background-position: center;
+    margin-right: 5px
+}
+.email_img p {
+    font-size: 16px; 
+    font-weight: 100;
     display: inline-block;
-    vertical-align: middle;
 }
-.boxbox p {
-    font-size: 14px; 
-    display: inline-block; 
-    margin: 13px 0; 
+.email_img a{
+    font-size: 16px;
+    margin-left: 5px
+    display:inline-block;
+    color:red;
 }
-.boxboxbox a{font-size: 30px; color:red;}
 
-.boxboxbox{
-    width: 20%;
-    height: 100%;
-    top:0%;
-    right:0%;
-    position: absolute;
-    box-sizing: border-box; 
-}
+
 .boxboxbox:hover{
     background-color: #484848;
     transition: all 1s;
@@ -912,7 +952,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .footer_bottom{
     width: 100%;
     height: 430px;
-    background-color: #0c0c0c;
+    background-color: #000000;
 }
 
 .footer_bottom-background-color{
@@ -1019,7 +1059,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     
     .box_1{height: 800px;}
     .big_1-img{height: 800px;}
-    .big_1-ling h1{font-size: 80px;}
+    .big_1-ling strong{font-size: 80px;}
     
     .box_2{height: 400px;}
     .box_2 a{ font-size: 42px;}
@@ -1035,7 +1075,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     .box_5 a{ font-size: 42px;}
     .box_5 p{ font-size: 21px;}
     
-    .big_6-ling h1{font-size: 80px;}
+    .big_6-ling strong{font-size: 80px;}
     .big_6-img{height: 800px;}
     
     .box_7-img{height: 400px;}
@@ -1132,7 +1172,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     .content-1{width: 50%;}
     
     .box_1{width: 100%;}
-    .big_1-ling h1{font-size: 60px;}
+    .big_1-ling strong{font-size: 60px;}
     
     .box_2{width: 50%;}
     .box_2 a{ font-size: 28px;}
@@ -1149,7 +1189,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     .box_5 p{ font-size: 14px;}
     
     .big_6-img{width: 100%;}
-    .big_6-ling h1{font-size: 60px;}
+    .big_6-ling strong{font-size: 60px;}
     
     .box_7-img{width: 50%;}
     .box_7-bb a{ font-size: 14px; padding: 10px 20px;}
@@ -1176,7 +1216,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 
 @media(max-width:1023px){
     .width1024_w{display: block;}
-    .width1024_b{display: none;}
+    .header_menu-b{display: none;}
     .bottom{height: 400px;}
     .footer_bottom{height: 721px}
     .footer_bottom-background-color{width:640px;}
