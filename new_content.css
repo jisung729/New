@@ -21,6 +21,7 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
    box-sizing: border-box;
    padding: 0 10px;
 }
+@media(min-width:768px){
 .col-m-1  {width: 8.33%;}
 .col-m-2  {width: 16.66%;}
 .col-m-3  {width: 25%;}
@@ -33,8 +34,8 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .col-m-10 {width: 83.33%;}
 .col-m-11 {width: 91.66%;}
 .col-m-12 {width: 100%;}
-
-@media(min-width:768px){
+}
+@media(min-width:1024px){
     .col-t-1  {width: 8.33%;}
     .col-t-2  {width: 16.66%;}
     .col-t-3  {width: 25%;}
@@ -48,8 +49,7 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     .col-t-11 {width: 91.66%;}
     .col-t-12 {width: 100%;}
 }
-
-@media(min-width:1024px){
+@media(min-width:1280px){
     .col-d-1  {width: 8.33%;}
     .col-d-2  {width: 16.66%;}
     .col-d-3  {width: 25%;}
@@ -99,6 +99,51 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
          design
 ===================================== */
 
+.join_login{
+    position: relative;
+    width:100%;
+    height: 50px;
+    background-color:#000000;
+}
+.logow{
+    width: 150px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.jolo{
+    float: right;
+    margin: 18px 15px 0 0;
+}
+.jolo li{
+    float: left;
+}
+.jolo a{
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 10px
+}
+.Search input{
+    position: absolute;
+    top: 15px;
+    right: 45%;
+    color: rgb(252, 209, 245);
+    text-align: center;
+    font-size: 14px;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
+    width: 200px;
+    height: 20px;
+}
+.dod{
+    position: absolute;
+    top:15px;
+    right: 44%;
+}
+.dod img{
+    margin-left: -15px;
+    width: 17px;
+    vertical-align: middle;
+}
 /*==========================================모바일아래로=========================================>*/
 .width1024_w{display: none; }
 
@@ -108,14 +153,19 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     position:absolute;
     width: 100%;
     height: 50px;
-    top: 0px;
+    padding-top: 10px;
     background-color: #ffffff; 
     text-align: center;
     z-index: 3000;
 }
 
 
-.w_meinicon1{ float: left; position: relative; z-index: 3001; }
+.w_meinicon1{
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: 3001; 
+}
 .w_meinicon1 img{ 
     width: 20px;
     top:15px;
@@ -149,110 +199,14 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .icon_hat{top: 20px; width: 20px; right:  98px; position: fixed;}
 .icon_cat{top: 20px; width: 20px; right:  35px; position: fixed; }
 
-/*==========================================모바일위로=========================================>*/
-.samsan{
-    display: none;
-    position: relative;
-}
-.inputbox{
-    width: 240px;
-    margin: 10px 5px;
-    background-color: #1e1e1e;
-    border: 2px solid #2b2b2b;
-    box-sizing: border-box;
-}/* 스크립트 작업시 메뉴 열었을때 메뉴바 제외하고 페이드 아웃 0.5~0.8 정도 */
-
-.inputbox img{ left:210px; top: 20px;}
-
-.samsan-menu{
-    position: absolute;
-    width: 250px;
-    height: 3938px;
-    background-color: #000000;
-    z-index: 9999;    
-}
-.samsan-menu input{
-    width: 180px;
-    padding: 5px 0;
-    margin: 5px;
-    color: #ffff;
-    background-color: #1e1e1e;
-}
-
-.samsan-menu a{
-    display: block;
-    font-size: 18px;
-    color:#cfcfcf;
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 2px solid #2b2b2b;   
-}
-.samsan-menu a:hover{
-    color: #ffff;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-}
-.asfaf{display: inline;}
 
 /*==========================================평상시아래로=======================================>*/
-
-.join_login{
-    position: relative;
-    width: :100%;
-    height:50px;
-    background-color: #000000;
-}
-.logow{
-    width: 100px;
-    margin-top:15px;
-    margin-left: 20px;
-}
-.Search input{
-    position: absolute;
-    top: 15px;
-    right:39%;
-    color:rgb(252, 209, 245);
-    text-align: center;
-    font-size: 14px;
-    background-color: #000000;
-    border-bottom: 2px solid #ffff;
-    width: 200px;
-    height: 20px;
-}
-.dod{
-    top: 15px;
-    right: 38%;
-    position: absolute;
-}
-.dod img{
-    margin-left: -15px;
-    width: 17px;
-    vertical-align: middle;
-}
-.jolo{
-    float: right;
-    margin: 18px 15px 0 0;
-}
-.jolo li{float: left;}
-.jolo a{
-    color: #ffff;
-    font-size: 16px;
-    margin: 0 10px;
-}
-.over:hover{
-    border-bottom:1px solid #ffffff;
-}
-.over-b:hover{
-    border-bottom: 1px solid #000000;
-}
 .header_menu-b{ 
     width: 100%;
     text-align: center;
-    margin-top: 50px;
-    margin-left: 50px;
+    position: fixed;
+    top: 80px;
+    z-index: 2000;
 }
 .header_menu-b li{
     display:inline; 
@@ -260,12 +214,10 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     margin: 0 20px;
 }
 .header_menu-b a{
-    color: #000000;
-    box-sizing: border-box;
+    color: #000000;; 
     font-size: 16px;
-    border-bottom: 1px solid #ffffff00;
 }
-/* 핫투 메뉴바 중에 핫임 */
+/*스크립트 마우스롤 다운 850px 이하 시 top 30px으로 수정*/
 .hot2 {
     position: absolute; 
     top: -30px;
@@ -323,59 +275,53 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .doun_2{ margin: 50px 19px; float: right; letter-spacing: 0.025em;}
 .doun_2:hover{background-color:cornflowerblue;}
 /*==========================================평상시메뉴=======================================>*/
-/* 작업해야함.
-[class*="mein-"] { 
-                position: absolute; 
-                top:0; 
-                left: 0; 
-                display: none;
-}*/
 
+.shop{position: relative;}
 
-.shop{position: relative; }
-.shop:hover .hover_w{
-    display: inline-block;
-}
-
-.hover_w{
-    display: none;
-    width: 700px;
-    height: 380px;
+.hover_backg{
+    width: 650px;
     background-color: rgba(255,255,255,0.8);
-    top: 30px;
-    left: -240px;
+    top: -320px;
+    left: 0px;
+    border-radius: 4px;
     position: absolute;
-}
+}/* top: 30px; left: -250px; SHOP 호버시 화면상에 옆에 좌표로 노출*/
 
 .hover_img{
-    position: absolute;
-    top: 25px;
-    right: 50px;
+    float: left;
 }
 .hover_img img{
     display: block;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 200px;
+    margin: 15px 0;
+    width: 350px;
+    height: 230px;
 }
 .hover_img a{
     font-size: 20px;
     color: #000000;
 }
-.hover_w-b{
-    top: 25px;
-    left: 25px;
-    position: absolute;
-    display: inline-block;
+.hover_img a:hover{
+    color: #ff5d5d;
+    transition: all 0.3s;
+    -webkit-
+    -moz-
+    -ms-
+    -o-
 }
-.hover_w-b a{
+[class*="lainrkr_"]{
+    float: left;
+    margin: 10px;
+}
+
+.hover_href_text a{
     width: 50px;
     font-size: 12px;
     padding: 10px;
+    margin-bottom: 1px;
     display: block;
     color: #000000;
 }
-.hover_w-b a:hover{
+.hover_href_text a:hover{
     background-color: rgba(0,0,0,0.5);
     color: #ffffff;
     border-radius: 10px;
@@ -385,58 +331,56 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     -ms-
     -o-
 }
-.hover_w-w{
-    top: 25px;
-    left: 125px;
-    position: absolute;
-    display: inline-block;
+.sclolling_ct{
+    width:100%;
+    margin-top:50px;
+    border: 1px solid red;
 }
-.hover_w-w a{
-    width: 50px;
-    font-size: 12px;
-    padding: 10px;
-    margin-bottom: 1px;
+.sclolling{
+    width:200px;
+    margin: 50px auto;
+}
+.sclolling_gender{
+}
+.sclolling_gender button{
+    width: 100px;
+    height: 30px;;
+    border: 1px solid red;
+    float: left;
+    margin-bottom: 10px;
+}
+[class*="gender_"]{
+    width: 200px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
     display: block;
-    color: #000000;
 }
-.hover_w-w a:hover{
-    background-color: rgba(0,0,0,0.5);
-    color: #ffffff;
-    border-radius: 10px;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-}
-.hover_life{
-    top: 25px;
-    left: 225px;
-    position: absolute;
-    display: inline-block;
-}
-/*트랜스폼 트랜지션 공부후 수정*/
-.hover_life a{
-    width: 50px;
-    font-size: 12px;
-    padding: 10px;
-    margin-bottom: 1px;
+[class="Kategorie"] select{
+    width: 200px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
     display: block;
-    color: #000000;
+}
+.list_list{
+    width: 100px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    float: left;
+}
+.list_num{
+    width: 100px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
     
 }
-.hover_life a:hover{
-    box-sizing: border-box;
-    border-bottom: 1px solid #000000;
-    transition: all 1s;
-}
+
+
+
 /*아래로 중간 discount 안내*/
-.product_discount{
-    margin: 50px 20px 0 20px;
-}
+.product_discount{margin-top: 100px;}
 .blue{
-    width: 492px;
-    height: 100px;
+    width: 50%;
+    height: 70px;
     display: table;
     background-color: blue;
     float: left;
@@ -449,8 +393,8 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     vertical-align: middle;
 }
 .pink{
-    width: 492px;
-    height: 100px;
+    width: 50%;
+    height: 70px;
     display: table;
     background-color: pink;
 }
@@ -463,7 +407,7 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 }
 
 .product_name{
-    margin-top:100px;
+    margin-top:50px;
     text-align: center;
     font-size: 3rem;
     font-weight: 300;
@@ -472,10 +416,10 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 
 /*아래로 왼쪽 메뉴바*/
 .content_nav{
-    float: left;
+    display: block;
+    position: fixed;
     width: 180px;
-    margin-top: 20px;
-    margin-left: 20px;
+    top: 350px;
 }
 .content_nav li{
     border: 1px solid #000000;
@@ -514,24 +458,21 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     font-size: 8px;
     margin-left: 40px;
 }
-/*아래로 상단 타그스크롤링바*/
-
+/*아래로 상단 타그스크롤링바 */
+.wrapper{
+    height: 100%;
+    padding-left: 180px;
+    display: block;
+}
 .tag_scroll{
-    float: left;
     vertical-align: middle;
-    width: 75%;
-    height: 45px;
-    margin: 17px 0 20px 20px;
+    height: 35px;
+    margin: 20px;
     border-bottom: 1px solid #e0e0e0;
 }
 
-.input_box{
-    float: left;
-    
-}
 .tag_scroll li{
-    margin-top: 20px;
-    float: left;
+    display: inline-block;
 }
 .tag_scroll select{
     width: 70px;
@@ -549,22 +490,24 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     -ms-
     -o-
 }
+.input_box{}
 .input_box-text p{
     margin-top: 10px;
     margin-left: 50px;
     font-size: 12px;
 }
-.num {
-    margin-top:22px;
-    float: right;
-}
-.num li{
+.num{ float: right;}
+.num div{ display: inline-block;}
+.num a{
     border: 1px solid #e0e0e0;
-    padding: 0 5px;
-    margin: 0 2px;
+    padding: 5px 5px 3px 5px;
+    margin: 0 1px;
     border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
 }
-.num li:hover{
+.num a:hover{
     border: 1px solid #e0e0e0;
     background-color: #e0e0e0; 
     color: #ffff; 
@@ -583,14 +526,6 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     border: 0px solid #ffffff00;
     border-radius: 0 10px 10px 0;
 }
-.num a{
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 5px;
-}
-.product_background ul{
-    margin: 0 10px 0 210px;
-}
 .product{
     margin-bottom: 10px;
     text-align: center;
@@ -603,6 +538,7 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     margin-top: 5px;
 }
 /*ㅍㅌ*/
+.footer_group{ margin-top: 200px;}
 
 .footer__left{ float: left; border-right: 1px solid #ffffff; }
 
@@ -830,13 +766,10 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 @media(min-width:1920px){
     .header_menu-b a{ font-size: 20px; margin: 0 30px;}
 }
-@media(max-width:1920px){ 
-    .bottom{height: 800px;}
-    .bottom_text p{font-size: 76px;}
+@media(max-width:1920px){
 }
 
 @media(max-width:1500px){
-    .bottom{height: 600px;}
 }
 
 @media(max-width:1200px){
@@ -845,21 +778,26 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 }
 
 @media(max-width:768px){
-    .bottom{height: 400px;}
-    .bottom_text p{font-size: 40px;}
     .footer_bottom{height: 711px}
     .footer_bottom-background-color{width:640px;}
-    .footer_bottom-background-color li{margin: 3% 5px;}
     .footer_text p{display: block;}
+    .input_box-text p{display: none;}
 }
 
 
 @media(max-width:1023px){
     .width1024_w{display: block;}
-    .width1024_b{display: none;}
-    .bottom{height: 400px;}
+    .mein_logo-b{width: 150px;}
+    .join_login{display: none;}
+    .product_name{display: none;}
+    .content_background{display: none;}
+    .w_meinicon1{display: none;}
+    .header_menu-b{display: none;}
+    .select_g{display: none;}
+    .wrapper{padding: 0;}
+
     .footer_bottom{height: 721px}
     .footer_bottom-background-color{width:640px;}
-    .footer_bottom-background-color li{margin: 3% 5px;}
     .footer_text p{display: block;}
+
 }

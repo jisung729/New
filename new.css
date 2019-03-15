@@ -99,9 +99,9 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
 
 html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; overflow-x: hidden;position: relative;}
 
-.slide{width: 100%; height:1000px;}
+.slide{width: 100%; height:750px;}
 .slide ul{width:calc(100% * 4);display:flex;animation:slide 12s infinite;}
-.slide li{width:calc(100% / 4);height:1000px;}
+.slide li{width:calc(100% / 4);height:750px;}
 .slide li:nth-child(1){
     background-image: url("img/background-slide-1.jpg"); 
     background-size: cover;
@@ -139,6 +139,53 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -o-
 }
 /*= 1024 미만 상당메뉴바 반응형 적용되있음.*/
+/*최상단 로그엔 바*/
+.join_login{
+    position: relative;
+    width:100%;
+    height: 50px;
+    background-color:#000000;
+}
+.logow{
+    width: 150px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.jolo{
+    float: right;
+    margin: 18px 15px 0 0;
+}
+.jolo li{
+    float: left;
+}
+.jolo a{
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 10px
+}
+.Search input{
+    position: absolute;
+    top: 15px;
+    right: 45%;
+    color: rgb(252, 209, 245);
+    text-align: center;
+    font-size: 14px;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
+    width: 200px;
+    height: 20px;
+}
+.dod{
+    position: absolute;
+    top:15px;
+    right: 44%;
+}
+.dod img{
+    margin-left: -15px;
+    width: 17px;
+    vertical-align: middle;
+}
+/*최상단 메뉴바들*/
 .width1024_w{display: none; }
 
 .header_menu-w ul {position: relative;}
@@ -155,7 +202,12 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 
 .mein_logo-b{ width: 150px; margin-top: 10px;}
 
-.w_meinicon1{ float: left; position: relative; z-index: 3001; }
+.w_meinicon1{
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: 3001; 
+}
 .w_meinicon1 img{ 
     width: 20px;
     top:15px;
@@ -213,6 +265,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     width: 180px;
     margin-top: 20px;
     margin-left: 20px;
+    background-color: #000000;
 }
 .content_nav li{
     border: 1px solid #cccccc;
@@ -343,9 +396,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .header_menu-b{ 
     width: 100%;
     text-align: center;
-    padding-top: 4%;
     position: fixed;
-    top: 0;
+    top: 80px;
     z-index: 2000;
 }
 .header_menu-b li{
@@ -353,12 +405,11 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     position: relative;
     margin: 0 20px;
 }
-.mein_logo img {width: 120px; vertical-align: middle;}
 .header_menu-b a{
-                color: #ffffff; 
-                font-size: 16px;
+    color: #ffffff; 
+    font-size: 16px;
 }
-
+/*스크립트 마우스롤 다운 850px 이하 시 top 30px으로 수정*/
 .hot2 {
     position: absolute; 
     top: -30px;
@@ -418,15 +469,13 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 
 /*==========1024 shop 호버 미니메뉴 3월14일 코드간소화작업완료==========*/
 
-.icon-3{margin-left: -35px;}
-
 .shop{position: relative;}
 
 .hover_backg{
     width: 650px;
     background-color: rgba(255,255,255,0.8);
-    top: -500px;
-    left: 660px;
+    top: -320px;
+    left: 0px;
     border-radius: 4px;
     position: absolute;
 }/* top: 30px; left: -250px; SHOP 호버시 화면상에 옆에 좌표로 노출*/
@@ -474,14 +523,6 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -moz-
     -ms-
     -o-
-}
-
-.hover_life{
-    top: 25px;
-    left: 225px;
-    height: 100%;;
-    position: absolute;
-    display: inline-block;
 }
 
 /*메인 아래 컨탠츠 3월14일 오차1픽셀 잡았음. 반응형 에서 다시 오차발생*/
@@ -1217,10 +1258,11 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 @media(max-width:1023px){
     .width1024_w{display: block;}
     .header_menu-b{display: none;}
+    .join_login{display: none;}
+    .w_meinicon1{display: none;}
     .bottom{height: 400px;}
     .footer_bottom{height: 721px}
     .footer_bottom-background-color{width:640px;}
-    .footer_bottom-background-color li{margin: 3% 5px;}
     .footer_text p{display: block;}
 }
 

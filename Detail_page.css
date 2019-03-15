@@ -150,52 +150,6 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .icon_cat{top: 20px; width: 20px; right:  35px; position: fixed; }
 
 /*==========================================모바일위로=========================================>*/
-.samsan{
-    display: none;
-    position: relative;
-}
-.inputbox{
-    width: 240px;
-    margin: 10px 5px;
-    background-color: #1e1e1e;
-    border: 2px solid #2b2b2b;
-    box-sizing: border-box;
-}/* 스크립트 작업시 메뉴 열었을때 메뉴바 제외하고 페이드 아웃 0.5~0.8 정도 */
-
-.inputbox img{ left:210px; top: 20px;}
-
-.samsan-menu{
-    position: absolute;
-    width: 250px;
-    height: 3938px;
-    background-color: #000000;
-    z-index: 9999;    
-}
-.samsan-menu input{
-    width: 180px;
-    padding: 5px 0;
-    margin: 5px;
-    color: #ffff;
-    background-color: #1e1e1e;
-}
-
-.samsan-menu a{
-    display: block;
-    font-size: 18px;
-    color:#cfcfcf;
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 2px solid #2b2b2b;   
-}
-.samsan-menu a:hover{
-    color: #ffff;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-}
-.asfaf{display: inline;}
 
 /*==========================================평상시아래로=======================================>*/
 
