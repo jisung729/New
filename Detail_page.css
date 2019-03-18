@@ -21,48 +21,49 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
    box-sizing: border-box;
    padding: 0 10px;
 }
-.col-m-1  {width: 8.33%;}
-.col-m-2  {width: 16.66%;}
-.col-m-3  {width: 25%;}
-.col-m-4  {width: 33.33%;}
-.col-m-5  {width: 41.66%;}
-.col-m-6  {width: 50%;}
-.col-m-7  {width: 58.33%;}
-.col-m-8  {width: 66.66%;}
-.col-m-9  {width: 75%;}
-.col-m-10 {width: 83.33%;}
-.col-m-11 {width: 91.66%;}
-.col-m-12 {width: 100%;}
 
-@media(min-width:768px){
-    .col-t-1  {width: 8.33%;}
-    .col-t-2  {width: 16.66%;}
-    .col-t-3  {width: 25%;}
-    .col-t-4  {width: 33.33%;}
-    .col-t-5  {width: 41.66%;}
-    .col-t-6  {width: 50%;}
-    .col-t-7  {width: 58.33%;}
-    .col-t-8  {width: 66.66%;}
-    .col-t-9  {width: 75%;}
-    .col-t-10 {width: 83.33%;}
-    .col-t-11 {width: 91.66%;}
-    .col-t-12 {width: 100%;}
-}
-
-@media(min-width:1024px){
-    .col-d-1  {width: 8.33%;}
-    .col-d-2  {width: 16.66%;}
-    .col-d-3  {width: 25%;}
-    .col-d-4  {width: 33.33%;}
-    .col-d-5  {width: 41.66%;}
-    .col-d-6  {width: 50%;}
-    .col-d-7  {width: 58.33%;}
-    .col-d-8  {width: 66.66%;}
-    .col-d-9  {width: 75%;}
-    .col-d-10 {width: 83.33%;}
-    .col-d-11 {width: 91.66%;}
-    .col-d-12 {width: 100%;}
-}
+@media(min-width:320px){
+    .col-m-1  {width: 8.33%;}
+    .col-m-2  {width: 16.66%;}
+    .col-m-3  {width: 25%;}
+    .col-m-4  {width: 33.33%;}
+    .col-m-5  {width: 41.66%;}
+    .col-m-6  {width: 50%;}
+    .col-m-7  {width: 58.33%;}
+    .col-m-8  {width: 66.66%;}
+    .col-m-9  {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    }
+    @media(min-width:1024px){
+        .col-t-1  {width: 8.33%;}
+        .col-t-2  {width: 16.66%;}
+        .col-t-3  {width: 25%;}
+        .col-t-4  {width: 33.33%;}
+        .col-t-5  {width: 41.66%;}
+        .col-t-6  {width: 50%;}
+        .col-t-7  {width: 58.33%;}
+        .col-t-8  {width: 66.66%;}
+        .col-t-9  {width: 75%;}
+        .col-t-10 {width: 83.33%;}
+        .col-t-11 {width: 91.66%;}
+        .col-t-12 {width: 100%;}
+    }
+    @media(min-width:1280px){
+        .col-d-1  {width: 8.33%;}
+        .col-d-2  {width: 16.66%;}
+        .col-d-3  {width: 25%;}
+        .col-d-4  {width: 33.33%;}
+        .col-d-5  {width: 41.66%;}
+        .col-d-6  {width: 50%;}
+        .col-d-7  {width: 58.33%;}
+        .col-d-8  {width: 66.66%;}
+        .col-d-9  {width: 75%;}
+        .col-d-10 {width: 83.33%;}
+        .col-d-11 {width: 91.66%;}
+        .col-d-12 {width: 100%;}
+    }
 
 
 /* =====================================
@@ -107,15 +108,20 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .header_menu-w li{
     position:absolute;
     width: 100%;
-    height: 50px;
-    top: 0px;
-    background-color: #ffffff;
+    height: 35px;
+    padding-top: 10px;
+    background-color: #ffffff; 
     text-align: center;
     z-index: 3000;
 }
 
 
-.w_meinicon1{ float: left; position: relative; z-index: 3001; }
+.w_meinicon1{
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: 3001; 
+}
 .w_meinicon1 img{ 
     width: 20px;
     top:15px;
@@ -149,6 +155,8 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .icon_hat{top: 20px; width: 20px; right:  98px; position: fixed;}
 .icon_cat{top: 20px; width: 20px; right:  35px; position: fixed; }
 
+
+
 /*==========================================모바일위로=========================================>*/
 
 /*==========================================평상시아래로=======================================>*/
@@ -167,19 +175,21 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .Search input{
     position: absolute;
     top: 15px;
-    right:39%;
-    color:rgb(252, 209, 245);
+    left: 50%;
+    margin-left: -110px;
+    color: rgb(252, 209, 245);
     text-align: center;
     font-size: 14px;
     background-color: #000000;
-    border-bottom: 2px solid #ffff;
+    border-bottom: 2px solid #ffffff;
     width: 200px;
     height: 20px;
 }
 .dod{
-    top: 15px;
-    right: 38%;
     position: absolute;
+    top:15px;
+    left:50%;
+    margin-left: 90px;
 }
 .dod img{
     margin-left: -15px;
@@ -275,114 +285,62 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .doun_2{ margin: 50px 19px; float: right; letter-spacing: 0.025em;}
 .doun_2:hover{background-color:cornflowerblue;}
 /*==========================================평상시메뉴=======================================>*/
-/* 작업해야함.
-[class*="mein-"] { 
-                position: absolute; 
-                top:0; 
-                left: 0; 
-                display: none;
-}*/
 
+.shop{position: relative;}
 
-.shop{position: relative; }
-.shop:hover .hover_w{
-    display: inline-block;
-}
-
-.hover_w{
-    display: none;
-    width: 700px;
-    height: 380px;
+.hover_backg{
+    width: 650px;
     background-color: rgba(255,255,255,0.8);
-    top: 30px;
-    left: -240px;
+    top: -450px;
+    left: 0px;
+    border-radius: 4px;
     position: absolute;
-}
+}/* top: 30px; left: -250px; SHOP 호버시 화면상에 옆에 좌표로 노출*/
 
 .hover_img{
-    position: absolute;
-    top: 25px;
-    right: 50px;
+    float: left;
 }
 .hover_img img{
     display: block;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 200px;
+    margin: 15px 0;
+    width: -320px;
+    height: 230px;
 }
 .hover_img a{
     font-size: 20px;
     color: #000000;
 }
-.hover_w-b{
-    top: 25px;
-    left: 25px;
-    position: absolute;
-    display: inline-block;
-}
-.hover_w-b a{
-    width: 50px;
-    font-size: 12px;
-    padding: 10px;
-    display: block;
-    color: #000000;
-}
-.hover_w-b a:hover{
-    background-color: rgba(0,0,0,0.5);
-    color: #ffffff;
-    border-radius: 10px;
-    transition: all 1s;
+.hover_img a:hover{
+    color: #ff5d5d;
+    transition: all 0.3s;
     -webkit-
     -moz-
     -ms-
     -o-
 }
-.hover_w-w{
-    top: 25px;
-    left: 125px;
-    position: absolute;
-    display: inline-block;
-}
-.hover_w-w a{
-    width: 50px;
-    font-size: 12px;
-    padding: 10px;
-    margin-bottom: 1px;
-    display: block;
-    color: #000000;
-}
-.hover_w-w a:hover{
-    background-color: rgba(0,0,0,0.5);
-    color: #ffffff;
-    border-radius: 10px;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-}
-.hover_life{
-    top: 25px;
-    left: 225px;
-    position: absolute;
-    display: inline-block;
-}
-/*트랜스폼 트랜지션 공부후 수정*/
-.hover_life a{
-    width: 50px;
-    font-size: 12px;
-    padding: 10px;
-    margin-bottom: 1px;
-    display: block;
-    color: #000000;
-    
-}
-.hover_life a:hover{
-    box-sizing: border-box;
-    border-bottom: 1px solid #000000;
-    transition: all 1s;
+[class*="lainrkr_"]{
+    float: left;
+    margin: 10px;
 }
 
+.hover_href_text a{
+    width: 50px;
+    font-size: 12px;
+    padding: 10px;
+    margin-bottom: 1px;
+    display: block;
+    color: #000000;
+}
+.hover_href_text a:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    border-radius: 10px;
+    transition: all 1s;
+    -webkit-
+    -moz-
+    -ms-
+    -o-
+}
 /*상세페이지*/
 .backg{
     margin-top: 50px;
@@ -393,7 +351,7 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .img_nav{float: left; padding: 0 0 0 10px;}
 .img_nav li{
     width: 75px;
-    margin-top: 20px;
+    margin-top: 10px;
     box-sizing: border-box;
     border: 1px solid rgb(241,241,241);
 }
@@ -403,12 +361,30 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .img_nav li img{
     width: 100%;
 }
-.big_img{ margin-top: 10px; margin-bottom: 10px;}
+.big_img{
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
 .big_img img{
     width: 100%;
+    box-sizing: border-box;
     border: 1px solid;
 }
+.slide_btm{display: none;}
+.slide_btm_g{
+    width: 150px;
+    margin: 0 auto;
+}
+.slide_btm li{float: left;}
+.slide_btm button{
+    width: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
 .explanation{
+    float: right;
     margin-top: 15px;
 }
 .title{
@@ -424,28 +400,33 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     font-weight: 400;
     font-size: 12px;
 }
-.discunt{
-    padding: 8px 10px 10px 10px;
-    margin: 10px 0;
+.discunt_g{
     background-color: rgb(241,241,241);
-
+    width: 100%;
+    height: 10px;
+    padding: 10px 0 8px 0;
+}
+.discunt{
+    float: left;
 
 }
 .discunt p{
-    padding-top: 6px;
     font-size: 12px;
     font-weight: 300;
+    padding-left: 10px;
 }
 .Country_of_origin{
     font-size: 12px;
-    margin-bottom: 30px;
 }
-
+.explanation li{
+    margin: 10px 0;
+}
 [id*=se_]{
     border: 1px solid #000000;
     width: 100px;
     height: 20px;;
 }
+.amount_size{ width: 100%;}
 .amount{
     float: left;
     padding-right: 10px;
@@ -453,7 +434,7 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 }
 .amount p{
     font-size: 12px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
 }
 .size {
@@ -462,7 +443,7 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 }
 .size p{
     font-size: 12px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
 }
 .size_guide{
@@ -476,29 +457,37 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 .size_guide a:hover{
     color: red;
 }
-/**/
-.box{
-    margin-top: 50px;
-}
-[class*=box_]{
-    width: 48%;
-    height: 14px;
-    padding: 12px 0px;
+.purchase_cart span{
+    padding: 10px 0 10px 0;
     text-align: center;
-    color: #ffff;
-    background-color: #e1e1e1;
-    float: left;
+    background-color: #cccccc;
+    border: 1px solid red;
+    box-sizing: border-box;
 }
-.box_1{margin-right: 10px;}
+.purchase_cart span:hover{
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #b3b3b3
+    transition: all 1s;
+    -webkit-
+    -moz-
+    -ms-
+    -o-
+}
+
+
+/**/
+
 .position{position: relative;}
 .join_backg{
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%; 
     height: 100%; 
     background-color: rgba(0,0,0,.8);
+    z-index: 5959;
 }
 .join_table {
     position: absolute;
@@ -735,6 +724,10 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
 
 @media(max-width:1023px){
     .width1024_w{display: block;}
+    .slide_btm{display: block;}
+    .img_nav{display: none;}
+    .backg{display: none;}
+    .join_login{display: none;}
     .width1024_b{display: none;}
     .bottom{height: 400px;}
     .footer_bottom{height: 721px}
