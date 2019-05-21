@@ -152,6 +152,13 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
      right: 55px;
      top:4px;
 }
+
+.hot2 {
+    position: absolute; 
+    width: 34px;
+    top: -26px;
+    left: 20px;
+  }
 .icon_hat{top: 20px; width: 20px; right:  98px; position: fixed;}
 .icon_cat{top: 20px; width: 20px; right:  35px; position: fixed; }
 

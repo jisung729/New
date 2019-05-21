@@ -4,20 +4,23 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="new.css">
-    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap.js"></script>
 </head>
 
 <body>
+
+<!-- 해더 모바일 메뉴도 안에 있음. -->
+<header>
+
     <div class="join_login clearfix">
                 <img src="img/moon-w.png" class="logow">
                 <ul class="jolo clearfix">
                     <li class="Search">
-                        <input type="text" name="Search" value="봄 원피스" class="Search">
-                    </li>
-                    <li class="dod">
-                        <a href="#">
-                            <img src="img/dod-w.png">
-                        </a>
+                        <div class="ggg clearfix">
+                            <input type="text" name="Search" value="봄 원피스"  class="Search_input" id="Search_input">
+                            <img src="img/dod-w.png" class="dod">
+                        </div>
                     </li>
                     <li class="join">
                         <a href="#" class="over">
@@ -30,1117 +33,196 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+    </div>
+
     <div class="width1024_w clearfix">
         <ul class="header_menu-w layout--center1024 clearfix">
             <li>
                 <a href="#">
-                    <img src="img/moon.png" class="mein_logo-b">
+                    <img src="img/moon-b.png" class="mein_logo-b">
                 </a>
             </li>
         </ul>
 
         <ul class="w_meinicon1">
             <li>
-                <input id="menu_open" type="button" value="menu" onclick="menu_open()">
+                <input id="menu_open" type="button" value="MENU" onclick="menu_open()">
             </li>
         </ul>
-        <div id="samsna_backg" class="samsna_backg">
-        <span class="content_background">
-                <ul class="content_nav">
-                    <li class="content_nav-1">
-                        <div class="menu_button">
-                            <a href="#" class="content_text">
-                                            NEW IN
-                                        </a>
-                                        <button onclick="">▽</button>
-                                    </div>
-                                    <div class="menu_serve">
-                                        <a href="#" class="serve_main">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="content_nav-2">
-                                    <div class="menu_button">
-                                        <a href="#" class="content_text">
-                                            MEN
-                                        </a>
-                                        <button onclick="#">▼</button>
-                                    </div>
-                                    <div class="menu_serve">
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            아우터
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            셔츠
-                                        </a><span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            티셔츠
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            면바지
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            청바지
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            신발
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            Acc
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="content_nav-3">
-                                    <div class="menu_button">
-                                        <a href="#" class="content_text">
-                                            WOMEN
-                                        </a>
-                                        <button onclick="#">▼</button>
-                                    </div>
-                                    <div class="menu_serve">
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            아우터
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            블라우스
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            티셔츠
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            면바지
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            청바지
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            치마
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            신발
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            Acc
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="content_nav-4">
-                                    <div class="menu_button">
-                                        <a href="#" class="content_text">
-                                            LIFE
-                                        </a>
-                                        <button onclick="#">▼</button>
-                                    </div>
-                                    <div class="menu_serve">
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="content_nav-5">
-                                    <div class="menu_button">
-                                        <a href="#" class="content_text">
-                                            SALE
-                                        </a>
-                                        <button onclick="#">▼</button>
-                                    </div>
-                                    <div class="menu_serve">
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="content_nav-6">
-                                    <div class="menu_button">
-                                        <a href="#" class="content_text">
-                                            EVENT
-                                        </a>
-                                        <button onclick="#">▼</button>
-                                    </div>
-                                    <div class="menu_serve">
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                        <a href="#">
-                                            <input type="checkbox" name="menu_serve" checkedbox>
-                                            상품명
-                                        </a>
-                                        <span class="serve_serve">
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                            <a href="#">
-                                                <input type="checkbox" name="menu_serve" checkedbox>
-                                                상품명
-                                            </a>
-                                        </span>
-                                    </div>
-                                </li>
-                            </ul>
-        </span>
-        </div>
+
+    <div id="samsna_backg" class="samsna_backg">
+        <ul class="samsna_cent">
+            <li class="menu_samsna_boy clearfix">
+                <div class="clearfix">
+                    <a href="#" value="sub_menu_on" class="samsna_text-m" onclick="sub_menu_m()">
+                        <spen>
+                            남자
+                        </spen>
+                    </a>
+                    <ul class="samsna_sub_menu_m">
+                        <li class="loding_bar">
+                            <p>
+                                아우터
+                            </p>
+                        </li>
+                        <li class="loding_bar">
+                            <p>
+                                상의
+                            </p>
+                        </li>
+                        <li class="loding_bar">
+                            <p>
+                                하의
+                            </p>
+                        </li>
+                        <li class="loding_bar">
+                            <p>
+                                신발
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu_samsna_w">
+                    <div class="clearfix">
+                        <a href="#" value="sub_menu_on" class="samsna_text-w" onclick="sub_menu_w()">
+                            <spen>
+                                여자
+                            </spen>
+                        </a>
+                        <ul class="samsna_sub_menu_w">
+                            <li class="loding_bar">
+                                <p>
+                                    아우터
+                                </p>
+                            </li>
+                            <li class="loding_bar">
+                                <p>
+                                    상의
+                                </p>
+                            </li>
+                            <li class="loding_bar">
+                                <p>
+                                    하의
+                                </p>
+                            </li>
+                            <li class="loding_bar">
+                                <p>
+                                    신발
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+            </li>
+            <li class="close_hov">
+                <input id="menu_close" class="menu_close" type="button"value="Close" onclick="menu_open()">
+            </li>
+        </ul>
+    </div>
         <ul class="w_meinicon2 clearfix">
             <li>
                 <a href="#">
-                    <img src="img/o.png" class="ooo_1">
+                    <p class="ooo_1">1</p>
                     <img src="img/hat-b.png" class="icon_hat">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="img/o.png" class="ooo_2">
+                    <p class="ooo_2">2</p>
                     <img src="img/cat-b.png" class="icon_cat">
                 </a>
             </li>
         </ul>
     </div>
-<header>
-        <div class="mein_background slide">
+
+    <ul class="header_menu-b">
+        <li>
+            <a href="#">NEW IN</a>
+        </li>
+        <li id="shop" class="shop" value="menu_on">
+            <a href="#">SHOP
+                <img src="img/hot.png" class="hot2">
+            </a>
+        </li>
+        <li>
+            <a href="#">SALE</a>
+        </li>
+        <li>
+            <a href="#">EVENT</a>
+        </li>
+        <li>
+            <a href="#">BEST SELLERS</a>
+        </li>
+        <li class="icon-1">
+            <a href="#">
+                <p class="oo">1</p>
+                <img src="img/hat-w.png" class="icon-1">
+            </a>
+        </li>
+        <li class="icon-2">
+            <a href="#" class="cat_icon-2">
+                <p class="oo">1</p>
+                <img src="img/cat-w.png" class="icon-2">
+            </a>
+        </li>
+        <li>
+            <div class="incat clearfix">
+                <div>
+                    <p class="upup">YOUR CART (0) Iems.</p>
+                    <a href="#" class="count111">0</a>
+                </div>
+                <div>
+                    <p class="doun_1">VIEW CART</p>
+                    <p class="doun_2">CHECK OUT</p>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+
+    <div id="hover_backg" class="remover_hover_backg">
+        <div class="hover_href_text lainrkr_1">
+            <a href="#">남자</a>
+            <a href="#">아우터</a>
+            <a href="#">셔츠</a>
+            <a href="#">티셔츠</a>
+            <a href="#">면바지</a>
+            <a href="#">청바지</a>
+            <a href="#">신발</a>
+            <a href="#">Acc</a>
+        </div>
+        <div class="hover_href_text lainrkr_2">
+            <a href="#">여자</a>
+            <a href="#">아우터</a>
+            <a href="#">블라우스</a>
+            <a href="#">티셔츠</a>
+            <a href="#">면바지</a>
+            <a href="#">청바지</a>
+            <a href="#">치마</a>
+            <a href="#">신발</a>
+            <a href="#">Acc</a>
+        </div>
+        <div class="hover_href_text lainrkr_3">
+            <a href="#">LIFE</a>
+            <a href="#">가구/조명</a>
+            <a href="#">캔들</a>
+            <a href="#">휴대폰<br>케이스</a>
+            <a href="#">언더웨어</a>
+            <a href="#">이너웨어</a>
+            <a href="#">시즌상품</a>
+            <a href="#">네일</a>
+        </div>
+        <div class="hover_img">
+                <img src="img/abcd.jpg">
+                <a href="#">
+                    MOON Collection
+                </a>
+        </div>
+    </div>
+
+</header>
+<!-- 자동슬라이드 css 으로 동작 1024이상 pc버전 동작  -->
+    <div class="slide">
             <ul>
                 <li>
                     <a href="#">
@@ -1162,96 +244,40 @@
                 </li>
                 <li></li>
             </ul>
-        </div>
-        <ul class="header_menu-b">
-            <li>
-                <a href="#">NEW IN</a>
-            </li>
-            <li class="shop">
-                <a href="#">SHOP
-                    <img src="img/hot.png" class="hot2">
-                </a>
-            </li>
-            <li>
-                <a href="#">SALE</a>
-            </li>
-            <li>
-                <a href="#">EVENT</a>
-            </li>
-            <li>
-                <a href="#">BEST SELLERS</a>
-            </li>
-            <li class="icon-1">
-                <a href="#">
-                    <p class="oo">1</p>
-                    <img src="img/hat-w.png" class="icon-1">
-                </a>
-            </li>
-            <li class="icon-2">
-                <a href="#" class="cat_icon-2">
-                    <p class="oo">1</p>
-                    <img src="img/cat-w.png" class="icon-2">
-                </a>
-            </li>
-            <li>
-                <div class="incat clearfix">
-                    <div>
-                        <p class="upup">YOUR CART (0) Iems.</p>
-                        <a href="#" class="count111">0</a>
-                    </div>
-                    <div>
-                        <p class="doun_1">VIEW CART</p>
-                        <p class="doun_2">CHECK OUT</p>
-                    </div>
+    </div>
+<!-- 수동페이드 css 으로 동작 1024이하 모바일버전 동작  -->
+    <div class="slide_p">
+                <input type="radio" name="pos" id="pos1" checked>
+                <input type="radio" name="pos" id="pos2">
+                <input type="radio" name="pos" id="pos3">
+                <input type="radio" name="pos" id="pos4">
+                <ul>
+                  <li>
 
-                </div>
-            </li>
-        </ul>
-<div class="hover_backg clearfix">
-                    <div class="hover_href_text lainrkr_1">
-                        <a href="new_content.html">남자</a>
-                        <a href="new_content.html">아우터</a>
-                        <a href="new_content.html">셔츠</a>
-                        <a href="new_content.html">티셔츠</a>
-                        <a href="new_content.html">면바지</a>
-                        <a href="new_content.html">청바지</a>
-                        <a href="new_content.html">신발</a>
-                        <a href="new_content.html">Acc</a>
-                    </div>
-                    <div class="hover_href_text lainrkr_2">
-                        <a href="new_content.html">여자</a>
-                        <a href="new_content.html">아우터</a>
-                        <a href="new_content.html">블라우스</a>
-                        <a href="new_content.html">티셔츠</a>
-                        <a href="new_content.html">면바지</a>
-                        <a href="new_content.html">청바지</a>
-                        <a href="new_content.html">치마</a>
-                        <a href="new_content.html">신발</a>
-                        <a href="new_content.html">Acc</a>
-                    </div>
-                    <div class="hover_href_text lainrkr_3">
-                        <a href="new_content.html">LIFE</a>
-                        <a href="new_content.html">가구/조명</a>
-                        <a href="new_content.html">캔들</a>
-                        <a href="new_content.html">휴대폰<br>케이스</a>
-                        <a href="new_content.html">언더웨어</a>
-                        <a href="new_content.html">이너웨어</a>
-                        <a href="new_content.html">시즌상품</a>
-                        <a href="new_content.html">네일</a>
-                    </div>
-                    <div class="hover_img">
-                            <img src="img/abcd.jpg">
-                            <a href="#">
-                                MOON Collection
-                            </a>
-                    </div>
-</div>
-</header>
-    <div class="content__box">
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+
+                  </li>
+                  <li>
+
+                  </li>
+                </ul>
+                <p class="bullet">
+                  <label for="pos1">1</label>
+                  <label for="pos2">2</label>
+                  <label for="pos3">3</label>
+                  <label for="pos4">4</label>
+                </p>
+    </div>
+<!-- 중간 컨텐츠 해상도에 따라 보여주는 갯수다름 1~5개 스크립트 구연중 -->
+    <div class="content_box">
         <ul class="content__img--box clearfix">
             <li class="content-1">
                 <img src="img/men-4-1.jpg">
-                <div class="content-text--1">
+                <div class="content-text--1 layout--table">
                     <p class="context-target-text">Hot Products</p>
                     <a class="link_back" href="#">SHOP NOW</a>
                 </div>
@@ -1260,25 +286,25 @@
             <li class="content-2">
                 <img src="img/men-4-2.jpg">
                 <div class="content-text--2">
-                    <p>Men</p> <a class="link_back" href="new_content.html">SHOP NOW</a>
+                    <p>Men</p> <a class="link_back" href="#">SHOP NOW</a>
                 </div>
             </li>
             <li class="content-3">
                 <img src="img/men-4-3.jpg">
                 <div class="content-text--3">
-                    <p>Wishlist</p> <a class="link_back" href="new_content.html">SHOP NOW</a>
+                    <p>Wishlist</p> <a class="link_back" href="#">SHOP NOW</a>
                 </div>
             </li>
             <li class="content-4">
                 <img src="img/men-4-4.jpg">
                 <div class="content-text--4">
-                    <p>Men</p> <a class="link_back" href="new_content.html">SHOP NOW</a>
+                    <p>Men</p> <a class="link_back" href="#">SHOP NOW</a>
                 </div>
             </li>
             <li class="content-5">
                 <img src="img/men-4-5.jpg">
                 <div class="content-text--5">
-                    <p>Women</p> <a class="link_back" href="new_content.html">SHOP NOW</a>
+                    <p>Women</p> <a class="link_back" href="#">SHOP NOW</a>
                 </div>
             </li>
 
@@ -1296,9 +322,11 @@
             </li>
         </ul>
     </div>
-    <div class="big_1 clearfix">
+<!-- 중하단 컨텐츠 반응형 ok -->
+    <div class="content_box_2">
+        <div class="big_1 clearfix">
         <ul class="big_1-nav clearfix">
-            <li class="box_1">
+            <li class="bitbox_1">
                 <div class="big_1-img">
                     <div class="back layout--table">
                         <div class="layout--table-cell">
@@ -1309,88 +337,90 @@
                     </div>
                 </div>
             </li>
-            <li class="box_2">
+            <li class="sbox_2">
                 <div class="layout--table">
                     <div class="big_1-text layout--table-cell">
-                        <a href="new_content.html">MEN</a><br><br><br>
+                        <a href="#">MEN</a>
                         <p>Fly style for a festival, beach or city</p>
                     </div>
                 </div>
             </li>
-            <li class="box_3">
+            <li class="sbox_3">
                 <div class="box_3-img layout--table">
                     <div class="box_3-bb layout--table-cell">
-                        <a href=new_content.html>SHOP NOW</a>
+                        <a href="#">SHOP NOW</a>
                     </div>
                 </div>
             </li>
-            <li class="box_4">
+            <li class="sbox_4">
                 <div class="box_4-img layout--table">
                     <div class="box_4-bb layout--table-cell">
-                        <a href=new_content.html>SHOP NOW</a>
+                        <a href="#">SHOP NOW</a>
                     </div>
                 </div>
             </li>
-            <li class="box_5">
+            <li class="sbox_5">
                 <div class="layout--table">
                     <div class="big_text layout--table-cell">
                         <div class="hothot"><img src="img/hot11.png"></div>
-                        <a href="new_content.html">HOT PRODUCTS</a><br><br><br>
+                        <a href="#">HOT PRODUCTS</a><br><br><br>
                         <p>Up to 60% off streetwear</p>
                     </div>
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="big_2 clearfix">
+        </div>
+        <div class="big_2 clearfix">
         <ul class="big_2-nav clearfix">
-            <li class="box_6">
+            <li class="bigbox_6">
                 <div class="big_6-img">
                     <div class="back layout--table">
                         <div class="layout--table-cell">
-                            <a href="new_content.html" class="big_6-ling">
+                            <a href="#" class="big_6-ling">
                                 <strong>womens<br> Cosllection</strong>
                             </a>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="box_7">
+            <li class="sbox_7">
                 <div class="box_7-img layout--table">
                     <div class="box_7-bb layout--table-cell">
-                        <a href="new_content.html">SHOP NOW</a>
+                        <a href="#">SHOP NOW</a>
                     </div>
                 </div>
             </li>
-            <li class="box_8">
+            <li class="sbox_8">
                 <div class="layout--table">
                     <div class="big_2-text layout--table-cell">
                         <div class="newnew"><img src="img/new.png"></div>
-                        <a href="new_content.html">WOMEN</a><br><br><br>
+                        <a href="#">WOMEN</a><br><br><br>
                         <p>Fly style for a festival, beach or city</p>
                     </div>
                 </div>
             </li>
 
-            <li class="box_9">
+            <li class="sbox_9">
                 <div class="layout--table">
                     <div class="big_2-text layout--table-cell">
                         <div class="sale"><img src="img/sale.png"></div>
-                        <a href="new_content.html">HOT PRODUCTS</a><br><br><br>
+                        <a href="#">HOT PRODUCTS</a><br><br><br>
                         <p>Fly style for a festival, beach or city</p>
                     </div>
                 </div>
             </li>
-            <li class="box_10">
+            <li class="sbox_10">
                 <div class="box_10-img layout--table">
                     <div class="box_10-bb layout--table-cell">
-                        <a href="new_content.html">SHOP NOW</a>
+                        <a href="#">SHOP NOW</a>
                     </div>
                 </div>
             </li>
         </ul>
+        </div>
     </div>
-
+<!-- 푸터 -->
+    <div class="footer">
     <div class="bottom">
         <div class="layout--table">
             <div class="bottom_text layout--table-cell">
@@ -1420,8 +450,7 @@
                         <div class="email_img">
                             <div class="email_img_ct">
                                 <img src="img/ew.png">
-                                <p>Enter your email address</p>
-                                <a href="#">➤</a>
+                                <a href="#">Enter your email address</a>
                             </div>
                         </div>
                     </div>
@@ -1471,36 +500,39 @@
                 <p class="mein">Photo gallery</p>
                 <div class="lain"></div>
 
-                <div class="bottom_img">
-                    <img src="img/13298139_184132495318392_182790454_n.jpg">
-                </div>
-                <div class="bottom_img">
-                    <img src="img/13408734_910024489123413_215522311_n.jpg">
-                </div><br>
-                <div class="bottom_img">
-                    <img src="img/13414347_1643790659280756_943367349_n.jpg">
-                </div>
-                <div class="bottom_img">
-                    <img src="img/13298139_184132495318392_182790454_n.jpg">
-                </div><br>
-                <div class="bottom_img">
-                    <img src="img/13408734_910024489123413_215522311_n.jpg">
-                </div>
-                <div class="bottom_img">
-                    <img src="img/13414347_1643790659280756_943367349_n.jpg">
-                </div>
+                <ul class="clearfix">
+                    <li class="bottom_img">
+                        <img src="img/13298139_184132495318392_182790454_n.jpg">
+                    </li>
+                    <li class="bottom_img">
+                        <img src="img/13408734_910024489123413_215522311_n.jpg">
+                    </li>
+                    <li class="bottom_img">
+                        <img src="img/13414347_1643790659280756_943367349_n.jpg">
+                    </li>
+                    <li class="bottom_img">
+                        <img src="img/13298139_184132495318392_182790454_n.jpg">
+                    </li>
+                    <li class="bottom_img">
+                        <img src="img/13408734_910024489123413_215522311_n.jpg">
+                    </li>
+                    <li class="bottom_img">
+                        <img src="img/13414347_1643790659280756_943367349_n.jpg">
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>
-    <div class="footer layout--table">
+    <div class="footer_bot layout--table">
         <div class="footer_text layout--table-cell"><br>
-            <p>© 2016 - Moon Store E-Commerce Theme. Created by Big Dot.</p>
+            <p>© 2019 - Moon Store E-Commerce Theme. Created by Big Dot.</p>
             <a href="#">Delivery Informartion</a>
             <a href="#">Aboutus</a>
             <a href="#">Privacy & Policy</a>
             <a href="#">Term & Conditions</a>
             <a href="#">Manufacture</a>
         </div>
+    </div>
     </div>
     <script src="./new.js"></script>
 </body>

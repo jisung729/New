@@ -49,7 +49,7 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
         .col-t-11 {width: 91.66%;}
         .col-t-12 {width: 100%;}
     }
-    @media(min-width:1280px){
+    @media(min-width:1200px){
         .col-d-1  {width: 8.33%;}
         .col-d-2  {width: 16.66%;}
         .col-d-3  {width: 25%;}
@@ -100,9 +100,9 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
 
 html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; overflow-x: hidden;position: relative;}
 
-.slide{width: 100%; height:750px;}
+.slide{width: 100%; height:975px; margin-top: 90px;}
 .slide ul{width:calc(100% * 3);display:flex;animation:slide 12s infinite;}
-.slide li{width:calc(100% / 3);height:750px;}
+.slide li{width:calc(100% / 3);height:975px;}
 .slide li:nth-child(1){
     background-image: url("img/background-slide-1.jpg"); 
     background-size: cover;
@@ -130,6 +130,76 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     -ms-
     -o-
 }
+.slide_p{
+    height:100%; 
+    height:975px; 
+    margin-top: 90px;
+    overflow:hidden;
+    position:relative;
+}
+.slide_p li{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    opacity:0;
+    transition:1s;
+}
+.slide_p li:nth-child(1){
+    background-image: url("img/background-slide-1.jpg"); 
+    background-size: cover;
+    background-position: top;
+}
+.slide_p li:nth-child(2){
+    background-image: url("img/background-slide-2.jpg"); 
+    background-size: cover;
+    background-position: top;
+}
+.slide_p li:nth-child(3){
+    background-image: url("img/background-slide-3.jpg"); 
+    background-size: cover;
+    background-position: top;
+}
+.slide_p li:nth-child(4){
+    background-image: url("img/background-slide-4.jpg"); 
+    background-size: cover;
+    background-position: top;
+}
+.slide_p input{
+    display:none;
+}
+.slide_p .bullet{
+    position:absolute;
+    bottom:40px;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index:10;
+}
+.slide_p .bullet label{
+    margin: 0 10px;
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    border:2px solid #6666;
+    display:inline-block;
+    background:#fff;
+    font-size:0;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+/* 슬라이드 조작 */
+#pos1:checked ~ ul li:nth-child(1),
+#pos2:checked ~ ul li:nth-child(2),
+#pos3:checked ~ ul li:nth-child(3),
+#pos4:checked ~ ul li:nth-child(4){opacity:1;}
+/* bullet 조작 */
+#pos1:checked ~ .bullet label:nth-child(1),
+#pos2:checked ~ .bullet label:nth-child(2),
+#pos3:checked ~ .bullet label:nth-child(3),
+#pos4:checked ~ .bullet label:nth-child(4){background:#666;}
 /*= 1024 미만 상당메뉴바 반응형 적용되있음.*/
 /*최상단 로그엔 바*/
 .join_login{
@@ -155,27 +225,29 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     font-size: 16px;
     margin: 0 10px
 }
-.Search input{
+.ggg{
     position: absolute;
-    top: 15px;
-    right: 45%;
+    top: 16px;
+    right: 50%;
+    margin-right: -100px;
+    height: 20px;
+}
+.Search_input{
     color: rgb(252, 209, 245);
     text-align: center;
     font-size: 14px;
+    padding-bottom: 4px;
     background-color: #000000;
     border-bottom: 2px solid #ffffff;
-    width: 200px;
-    height: 20px;
 }
 .dod{
-    position: absolute;
-    top:15px;
-    right: 44%;
+    margin-top: 4px;
+    width: 16px;
+    float: right;
 }
 .dod img{
     margin-left: -15px;
-    width: 17px;
-    vertical-align: middle;
+    width: 100%;
 }
 /*최상단 메뉴바들*/
 .width1024_w{display: none; }
@@ -192,7 +264,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     z-index: 3000;
 }
 
-.mein_logo-b{ width: 150px; margin-top: 10px;}
+.mein_logo-b{ width: 150px; margin-top: 5px;}
 
 .w_meinicon1{
     position: relative;
@@ -201,34 +273,46 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     z-index: 3001; 
 }
 .w_meinicon1 input{ 
-    width: 20px;
-    top:15px;
-    left: 15px;;
+    width: 50px;
+    padding: 5px;
+    top:14px;
+    left: 15px;
     position: fixed;
 }
 
 .w_meinicon2{
-    float: right; 
+    float: right;
     right: 100px; 
     display: inline-block;
 }
 .w_meinicon2 li{
-    float: left; 
-    margin: 20px 20px 0px 20px; 
+    float: left;
     position: relative;
     z-index: 3002;
 }
 .ooo_1 {
-    width: 22px;        
-    position: fixed; 
-    right: 115px;
-    top:4px;
+    position: fixed;
+    font-size: 14px;
+    width: 22px;
+    top: 10px;
+    right: 116px;
+    text-align: center;
+    padding-top: 4px; 
+    color: #ffffff;
+    background-color: #ff3000;
+    border-radius: 8px;
 }
 .ooo_2 {
-     width: 22px; 
-     position: fixed; 
-     right: 55px;
-     top:4px;
+    position: fixed;
+    font-size: 14px;
+    width: 22px;
+    top: 10px;
+    right: 55px;
+    text-align: center;
+    padding-top: 4px; 
+    color: #ffffff;
+    background-color: #ff3000;
+    border-radius: 8px;
 }
 .icon_hat{top: 20px; width: 20px; right:  98px; position: fixed;}
 .icon_cat{top: 20px; width: 20px; right:  35px; position: fixed; }
@@ -238,63 +322,73 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .samsna_backg{
     display: none;
     position: absolute;
-    top: 50px;
+    z-index: 9999;
+    top: 0;
     left: 0;
-    width: 100%; 
-    height: 3900px; 
-    z-index: 5555;
-    background-color: rgba(0,0,0,.8);
-
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
 }
-
-.content_background{
-    position: absolute;
-    top: 30px;
-    left: -20px;
-    z-index: 4444;
-}
-.content_nav{
-    float: left;
-    width: 180px;
-    margin-top: 20px;
-    margin-left: 20px;
+.samsna_cent{
+    width: 250px;
+    margin-top: 100px;
+    border-top: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 40px;
+    color: #ffffff;
     background-color: #000000;
 }
-.content_nav li{
-    border: 1px solid #cccccc;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+
+[class*='menu_samsna_'] a{
+    border-bottom: 2px solid #ffffff;
+    padding: 30px 40px;
+    display: block;
 }
-.content_text{font-weight: bold; color: #ffffff;}
-.menu_button{ margin: 5px 1px;}
-.menu_serve{
-    max-height: 200px;
-    overflow-y: scroll;
+.menu_samsna_w{
+    border-top: 2px solid #ffffff;
 }
 
-.menu_serve a{
-    color:#ffffff;;
-    font-weight: 400;
-    display:block;
-    margin-top:10px;
-    margin-left: 20px;
-    font-size: 12px;
-    text-align: left;
+[class*='samsna_sub_menu_']{
+    display: none;
 }
-.menu_button{
-    border-bottom: 1px solid #cccccc;
-    width: 175px;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 999;
-}
-.menu_button button{
-    float: right;
-    margin:0 10px 0 45px;
-}
-.serve_serve a{
-    font-size: 8px;
+[class*='samsna_sub_menu_'] li{
+    position: relative;
+    font-size: 26px;
+    padding: 25px 0;
+    margin-bottom: 26px;
     margin-left: 40px;
+}
+.loding_bar:after{
+    position:absolute;
+    left:0;
+    width:0;
+    height:2px;
+    background:red;
+    display:block;
+    content:'';
+    transition: width 0.5s ease-in-out;
+  }
+  .loding_bar:hover:after{
+    width:95%;
+  }
+  [class*='samsna_sub_menu_'] li:last-child{
+    margin-bottom: 0px;
+  }
+
+.samsna_cent .close_hov{
+    text-align: right;
+    display: block;
+    padding: 14px 20px 20px 20px;
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    box-sizing: border-box;
+}
+.menu_close{
+    font-size: 26px;
+    color: red;
+    background-color: transparent;
 }
 /*아래로 상단 타그스크롤링바*/
 
@@ -325,11 +419,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .tag_scroll select:hover{
     background-color: #e0e0e0;
     color: #ffff;
-    transition: all 0.5s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 .input_box-text p{
     margin-top: 10px;
@@ -351,11 +442,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     background-color: #e0e0e0; 
     color: #ffff; 
     border-radius: 4px;
-    transition: all 0.5s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 .num li:first-child{
     border: 0px solid #ffffff00;
@@ -385,7 +473,19 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     margin-top: 5px;
 }
 /*==========================================평상시아래로=======================================>*/
-
+.musdownbg{
+    width: 100%;
+    height: 50px;
+    padding-top: 26px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2000;
+    background-color: #ffffff;
+}
+.musdowntt{
+    color: #000000;
+}
 .header_menu-b{ 
     width: 100%;
     text-align: center;
@@ -405,7 +505,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 /*스크립트 마우스롤 다운 850px 이하 시 top 30px으로 수정*/
 .hot2 {
     position: absolute; 
-    top: -30px;
+    width: 34px;
+    top: -26px;
     left: 20px;
 }
 
@@ -464,15 +565,40 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 
 .shop{position: relative;}
 
-.hover_backg{
+.remover_hover_backg{
+    position: absolute;
+    top: -500px;
+    left: 50%;
+    margin-left: -325px;
+}
+.add_hover_backg{
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -325px;
     width: 650px;
     background-color: rgba(255,255,255,0.8);
-    top: -320px;
-    left: 0px;
     border-radius: 4px;
+    transition: .5s cubic-bezier(0.76, 0.05, 0.04, 1.1)
+}
+/* 
+.remover_hover_backg{
+    display: block;
     position: absolute;
-}/* top: 30px; left: -250px; SHOP 호버시 화면상에 옆에 좌표로 노출*/
+    top: 120px;
+    left: 50%;
+    margin-left: -325px;
+    width: 650px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 4px;
+} */
 
+/* top: 30px; left: -250px; SHOP 호버시 화면상에 옆에 좌표로 노출*/
+/* 노출전 위치
+top: -320px;
+    left: 0px; 
+    */
 .hover_img{
     float: left;
 }
@@ -488,7 +614,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 .hover_img a:hover{
     color: #ff5d5d;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     -webkit-
     -moz-
     -ms-
@@ -511,92 +637,62 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     background-color: rgba(0,0,0,0.5);
     color: #ffffff;
     border-radius: 10px;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 
-/*메인 아래 컨탠츠 3월14일 오차1픽셀 잡았음. 반응형 에서 다시 오차발생*/
-
-
-.content__box{position: relative;}
+.content_box{position: relative;}
 .content__img--box img{ 
     width: 100%;
     height: 100%;
 }
+.content-3{margin-top: 1px;}
 
 [class*="content-"]{
     width: 20%;
+    padding: 0;
     position: relative;
     float: left;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-}
-[class*="content-"]:hover [class*="content-text--"]{
-    opacity: 1; 
-    bottom: 0px;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
 }
 
-[class*="content-text--"]{   
-    display: table;
+[class*="content-"]:hover [class*="content-text--"]{
+    opacity: 1;
+}
+
+[class*="content-text--"]{
     position: absolute; 
     width: 100%;
-    height: 55px;
     background-color: #ffff;
     right: 0;
-    bottom:0px;
+    bottom: 0;
+    margin-bottom: -1px;
     opacity: 0;
     box-sizing: border-box;
-    transition: all 1s;
-                -webkit-
-                -moz-
-                -ms-
-                -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
-
 [class*="content-text--"] p{
     font-size: 22px;
-    font-weight: 900;
-    margin-top: 15px;
-    left: 10%;
-    position: absolute;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+
 }
 
 [class*="content-text--"] a{
     border: 1px solid #c7c7c7;
-    border-radius: 20px;
+    border-radius: 30px;
     color: #c7c7c7;
-    font-size: 12px;
-    right: 5%;
-    bottom: 20%;
-    padding: 3% 6%;
-    display:inline-block;
-    position: absolute;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-    
+    font-size: 14px;
+    padding: 15px 10px 12px 10px;
+    margin: 10px auto;
+    display: block;
+    width: 122px;
+    text-align: center;
 }
 [class*="link_back"]:hover {
     background-color: #ff7878;
     color: #ffff;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
 }
 
 
@@ -604,76 +700,59 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .direction img {width: 90%;}
 .direction li{float: left;}
 .direction_right{
-                top:45%; 
-                right: 95%; 
-                opacity: 0.5; 
-                transition: all 0.5s;
-                -webkit-
-                -moz-
-                -ms-
-                -o-
+    top:45%; 
+    right: 95%; 
+    opacity: 0.5; 
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 .direction_right:hover{opacity: 1;}
 
 .direction_left{
-                top:45%; 
-                left: 95%; 
-                opacity: 0.5; 
-                transition: all 0.5s;
-                -webkit-
-                -moz-
-                -ms-
-                -o-
+    top:45%; 
+    left: 95%; 
+    opacity: 0.5; 
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 .direction_left:hover{opacity: 1;}
 [class*="direction_"]{ position: absolute;}
 
 /*======================================================================================*/
 
-.box_1{width: 50%; height: 500px; float: left;}
-.box_1 strong{
+.bitbox_1{width: 50%; height: 500px; float: left;}
+.bitbox_1 strong{
     font-size: 64px;
     color:black;
 }
 .big_1-img{
     background-image: url(img/8.png);
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 .back{
     width: 100%; 
     height: 100%;
+    padding-left: 1px;
     background-color: rgba(255,255,255,.7);
 }
 .big_1-img:hover .back{
     background-color: rgba(255,255,255,.0);
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 .big_1-ling strong:hover{
     color: crimson;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 
 }
-.box_2{
-    width: 25%;
-    height: 250px;
-    float: left;
-}
-.box_2 a{ font-size: 30px; color: #000000;}
-.box_2 a:hover{color: red;}
-.box_2 p{ font-size: 16px;}
+.sbox_2 a{ font-size: 30px; color: #000000;}
+.sbox_2 a:hover{color: red;}
+.sbox_2 p{ font-size: 16px; margin-top: 20px;}
 
-.box-3{width: 25%; height: 250px;}
 .box_3-bb{
     width: 100%;
     background-color: #000000; 
@@ -681,11 +760,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 .box_3-bb:hover{
     opacity: 0.7;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 .box_3-bb a{ 
     font-size: 14px;
@@ -703,18 +779,13 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     background-image: url(img/9.jpg);
     background-position: center;
     background-size: cover;
-    width: 25%;
-    height: 250px;
-    float: left;
+    width: 100%;
 }
-
 .box_4-img{
     background-image: url(img/10.jpg);
     background-position: center;
     background-size: cover;
-    width: 25%;
-    height: 250px;
-    float: left;
+    width: 100%;
 }
 .box_4-bb{
     width: 100%; 
@@ -724,11 +795,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 .box_4-bb:hover{
     opacity: 0.7;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 .box_4-bb a{ 
     font-size: 14px;
@@ -743,58 +811,55 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     color: #000000;
 }
 
-.box_5{
+[class*="sbox_"]{
     width: 25%;
     height: 250px;
     float: left;
     position: relative;
 }
 .hothot img{width: 100px; height: 100px; top:-3px; right: -3px; box-sizing: border-box; position: absolute;}
-.box_5 a{ font-size: 26px; color: #000000;}
-.box_5 a:hover{color: red;}
-.box_5 p{ font-size: 16px;}
+.sbox_5 a{ font-size: 26px; color: #000000;}
+.sbox_5 a:hover{color: red;}
+.sbox_5 p{ font-size: 16px;}
 
 /*=========================================================================================================*/
 
 .big_2{width: 100%;}
-
-.big_6-img{
-    background-image: url(img/15.jpg);
-    background-position: center;
-    background-size: cover;
+.bigbox_6{
     width: 50%;
     height: 500px;
     float: right;
 }
+.big_6-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/15.jpg);
+    background-position: center;
+    background-size: cover;
+}
 .big_6-img:hover .back{
     background-color: rgba(255,255,255,0);
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    
 }
 .big_6-ling strong:hover{
     color: crimson;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
-.box_6 strong{
+.bigbox_6 strong{
     font-size: 64px;
     color:black;
 }
-.box_7{width: 100%;}
+.box_7{
+    width: 100%;
+}
 .box_7-img{
     background-image: url(img/11.jpg);
     background-position: center;
     background-size: cover;
-    width: 25%;
-    height: 250px;
-    float: left;
+    width:100%;
 }
 .box_7-bb{
     width: 100%; 
@@ -804,11 +869,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 .box_7-bb:hover{
     opacity: 0.7;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 .box_7-bb a{ 
     font-size: 14px;
@@ -822,31 +884,20 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     background-color: #ffffff; 
     color: #000000;
 }
-.box_8{
-    width: 25%;
-    height: 250px;
-    float: left;
-}
-.box_8 a {font-size: 36px; color: #000000;}
-.box_8 a:hover{color: red;}
-.box_8 p {font-size: 16px;}
+.sbox_8 a {font-size: 36px; color: #000000;}
+.sbox_8 a:hover{color: red;}
+.sbox_8 p {font-size: 16px;}
 
-.box_9{
-    width: 25%;
-    height: 250px;
-    float: left;
-}
-.box_9 a {font-size: 36px; color: #000000;}
-.box_9 a:hover{color: red;}
-.box_9 p {font-size: 14px;}
+.sbox_9 a {font-size: 36px; color: #000000;}
+.sbox_9 a:hover{color: red;}
+.sbox_9 p {font-size: 14px;}
 
 .box_10-img{
     background-image:url(img/12.jpg);
     background-position: center;
     background-size: cover;
-    width: 25%;
-    height: 250px;
-    float: right;
+    width: 100%;
+    margin-left: 1px;
 }
 .box_10-bb{
     width: 100%; 
@@ -856,11 +907,8 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 .box_10-bb:hover{
     opacity: 0.7;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 .box_10-bb a{ 
     font-size: 14px;
@@ -877,7 +925,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 
 
 .big_2-text{position: relative;}
-.newnew img{width: 100px; height: 100px; top:-3px; right: -3px;  position: absolute;}
+.newnew img{width: 100px; height: 100px; top:-3px; right: -5px;  position: absolute;}
 .sale img{width: 100px; height: 100px; top:-3px; left: -3px;  position: absolute;}
 
 /*===========================================================================================*/
@@ -887,7 +935,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     background-size:cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 500px;
 }
 
 .bottom_text p{
@@ -898,18 +946,23 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 
 .bottom_text a {
+    font-size: 14px;
     border: 1px solid #ffffff;
+    box-sizing: border-box;
     border-radius: 20px;
-    padding: 10px 40px;
+    padding: 10px 30px 6px 30px;
     background-color: #ffffff;
     color: #000000;
 }
 .bottom_text a:hover{
+    font-size: 14px;
     border: 1px solid #ffffff;
+    box-sizing: border-box;
     border-radius: 20px;
-    padding: 10px 40px;
+    padding: 10px 30px 6px 30px;
     background-color: #000000;
     color: #ffffff;
+    transition: all 1s;
 }
 
 /*========================================================================*/
@@ -920,7 +973,6 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     font-size: 22px;
     display: inline-block;
     margin-bottom: 13px;
-    vertical-align:middle;
 }
 
 .footer__left img{
@@ -952,6 +1004,9 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     margin: 0 auto;
     background-color: #343434;
 }
+.email_img:hover{
+    color: red;
+}
 .email_img_ct{
     padding-top: 14px;
 }
@@ -960,32 +1015,23 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     height: 20px;
     margin-right: 5px
 }
-.email_img p {
+.email_img a {
     font-size: 16px; 
     font-weight: 100;
     display: inline-block;
-}
-.email_img a{
-    font-size: 16px;
-    margin-left: 5px
-    display:inline-block;
-    color:red;
 }
 
 
 .boxboxbox:hover{
     background-color: #484848;
-    transition: all 1s;
-    -webkit-
-    -moz-
-    -ms-
-    -o-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
 }
 
 /*=========================================================================================*/
 .footer_bottom{
     width: 100%;
-    height: 430px;
+    height: 400px;
     background-color: #000000;
 }
 
@@ -1034,6 +1080,7 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 .footer_bottom-text p{ padding: 5px 0;}
 
 .footer_bottom-text{
+    width: 175px;
     line-height: 2.2;
     text-align: left;
     position: relative;
@@ -1046,16 +1093,18 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 }
 
 .bottom_img {
-    width: 75px;
-    padding: 2px;
-    display: inline-block;
+    width: 40%;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+    box-sizing: border-box;
+}
+.bottom_img img{
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.bottom_img img:hover{border: 3px solid crimson; box-sizing: border-box;}
-
-.bottom_img img{ width: 100%; }
-
-.footer{
+.footer_bot{
     width: 100%;
     height: 60px; 
     background-color: black;
@@ -1084,178 +1133,139 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
     display: inline-block;
 }
 
-@media(min-width:1920px){
-    .mein_logo img { width: 200px; vertical-align: middle;}
-    .header_menu-b a{ font-size: 20px; margin: 0 30px;}
-}
-@media(max-width:1920px){
-    .mein_background{ background-position: top;}
-    
-    .box_1{height: 800px;}
-    .big_1-img{height: 800px;}
-    .big_1-ling strong{font-size: 80px;}
-    
-    .box_2{height: 400px;}
-    .box_2 a{ font-size: 42px;}
-    .box_2 p{ font-size: 21px;}
-    
-    .box_3-img{height: 400px;}
-    .box_3-bb a{ font-size: 18px; padding: 12px 22px;}
-    
-    .box_4-img{height: 400px;}
-    .box_4-bb a{ font-size: 18px; padding: 12px 22px;}
-    
-    .box_5{height: 400px;}
-    .box_5 a{ font-size: 42px;}
-    .box_5 p{ font-size: 21px;}
-    
-    .big_6-ling strong{font-size: 80px;}
-    .big_6-img{height: 800px;}
-    
-    .box_7-img{height: 400px;}
-    .box_7-bb a{ font-size: 18px; padding: 12px 22px;}
-    
-    .box_8{height: 400px;}
-    .box_8 a{ font-size: 42px;}
-    .box_8 p{ font-size: 21px;}
-    
-    .box_9{height: 400px;}
-    .box_9 a{ font-size: 42px;}
-    .box_9 p{ font-size: 21px;}
-    
-    .box_10-img{height: 400px;}
-    .box_10-bb a{ font-size: 18px; padding: 12px 22px;}
-    
-    .bottom{height: 800px;}
-    .bottom_text p{font-size: 76px;}
-}
-
-@media(max-width:1500px){
-    .content-5{display: none;}
-    .content-4{width: 25%}
-    .content-3{width: 25%}
-    .content-2{width: 25%}
-    .content-1{width: 25%}
-    
-    .box_1{height: 600px;}
-    
-    .big_1-img{height: 600px;}
-    
-    .box_2{height: 300px;}
-    .box_2 a{ font-size: 30px;}
-    .box_2 p{ font-size: 16px;}
-    
-    .box_3-img{height: 300px;}
-    .box_3-bb a{ font-size: 14px; padding: 10px 20px;}
-    
-    .box_4-img{height: 300px;}
-    .box_4-bb a{ font-size: 14px; padding: 10px 20px;}
-    .box_5{height: 300px;}
-    .box_5 a{ font-size: 30px;}
-    .box_5 p{ font-size: 16px;}
-    
-    .big_6-img{height: 600px;}
-    
-    .box_7-img{height: 300px;}
-    .box_7-bb a{ font-size: 14px; padding: 10px 20px;}
-    
-    .box_8{height: 300px;}
-    .box_8 a{ font-size: 30px;}
-    .box_8 p{ font-size: 16px;}
-    
-    .box_9{height: 300px;}
-    .box_9 a{ font-size: 30px;}
-    .box_9 p{ font-size: 16px;}
-    
-    .box_10-img{height: 300px;}
-    .box_10-bb a{ font-size: 14px; padding: 10px 20px;}
-    .bottom{height: 600px;}
-}
-
-@media(max-width:1200px){
-    .content-5{display: none;}
-    .content-4{display: none;}
-    .content-3{width: 33.33%}
-    .content-2{width: 33.33%}
-    .content-1{width: 33.33%}
-    
-    .box_2 a{ font-size: 30px;}
-    .box_2 p{ font-size: 16px;}
-    
-    .box_3-bb a{ font-size: 14px; padding: 10px 20px;}
-    .box_4-bb a{ font-size: 14px; padding: 10px 20px;}
-    
-    .box_5 a{ font-size: 30px;}
-    .box_5 p{ font-size: 16px;}
-    
-    .box_7-bb a{ font-size: 14px; padding: 10px 20px;}
-    .box_8 a{ font-size: 30px;}
-    .box_8 p{ font-size: 16px;}
-    .box_9 a{ font-size: 30px;}
-    .box_9 p{ font-size: 16px;}
-    .box_10-bb a{ font-size: 14px; padding: 10px 20px;}
-    .footer_bottom{height: 430px}
-    .footer_text p{display: inline-block;}
-}
-
-@media(max-width:768px){
+@media(min-width:320px) and (max-width:1023px){
+    .slide{display: none;}
     .content-5{display: none;}
     .content-4{display: none;}
     .content-3{display: none;}
-    .content-2{width: 50%;}
-    .content-1{width: 50%;}
-    
-    .box_1{width: 100%;}
-    .big_1-ling strong{font-size: 60px;}
-    
-    .box_2{width: 50%;}
-    .box_2 a{ font-size: 28px;}
-    .box_2 p{ font-size: 14px;}
-    
-    .box_3-img{width: 50%;}
-    .box_3-bb a{ font-size: 14px; padding: 10px 20px;}
-    
-    .box_4-img{width: 50%;}
-    .box_4-bb a{ font-size: 14px; padding: 10px 20px;}
-    
-    .box_5{width: 50%;}
-    .box_5 a{ font-size: 28px;}
-    .box_5 p{ font-size: 14px;}
-    
-    .big_6-img{width: 100%;}
-    .big_6-ling strong{font-size: 60px;}
-    
-    .box_7-img{width: 50%;}
-    .box_7-bb a{ font-size: 14px; padding: 10px 20px;}
-    
-    .box_8{ width: 50%;}
-    .box_8 a{ font-size: 28px;}
-    .box_8 p{ font-size: 14px;}
-    
-    .box_9{width: 50%;}
-    .box_9 a{ font-size: 28px;}
-    .box_9 p{ font-size: 14px;}
-    
-    .box_10-img{width: 50%;}
-    .box_10-bb a{ font-size: 14px; padding: 10px 20px;}
+    .content-2{display: none;}
+    .content-1{width: 100%;}
+    .header_menu-w li{
+        height: 100px;;
+    }
+    .mein_logo-b {
+        width: 250px;
+        margin-top: 15px;
+    }
+    .w_meinicon1 input {
+        width: 70px;
+        height: 30px;
+        border-radius: 30px;
+        padding: 5px;
+        top: 34px;
+        left: 20px;
+    }
+    .ooo_1{
+        width: 26px;
+        top: 16px;
+        right: 140px;
+        padding: 4px 0px;
+    }
+    .ooo_2{
+        width: 26px;
+        top: 16px;
+        right: 70px;
+        padding: 4px 0px;
 
-    .bottom{height: 400px;}
-    .bottom_text p{font-size: 40px;}
-    .footer_bottom{height: 711px}
-    .footer_bottom-background-color{width:640px;}
-    .footer_bottom-background-color li{margin: 3% 5px;}
-    .footer_text p{display: block;}
-}
-
-
-@media(max-width:1023px){
+    }
+    .icon_cat {
+        top: 30px;
+        width: 35px;
+        right: 35px;
+    }
+    .icon_hat {
+        top: 30px;
+        width: 35px;
+        right: 110px;
+    }
+    [class*="content-text--"]{
+        height: 200px;
+        text-align: center;
+        padding: 10px;
+    }
+    [class*="content-text--"] p {
+        font-size: 3.5rem;
+        margin: 20px 0 0 20px;
+    }
+    [class*="content-text--"] a{
+        font-size: 12px;
+        padding: 20px 20px 14px 20px;
+        font-size: 26px;
+        margin: 20px auto 0 auto;
+        width: 240px;
+    }
+    .bitbox_1{
+        width: 100%;
+        height: 750px;;
+    }
+    [class*="sbox_"]{
+        width: 50%;
+        height: 500px;
+    }
+    [class*="sbox_"] a{
+        font-size: 2.7rem;
+    }
+    [class*="sbox_"] p{
+        
+        font-size: 1.8rem;
+    }
+    [class*="-bb"] a{
+        font-size: 1rem;
+        padding: 13px 20px 10px 20px;
+    }
+    .bigbox_6{
+        width: 100%;
+        height: 500px;
+    }
+    .bottom{
+        height: 750px;
+    }
     .width1024_w{display: block;}
     .header_menu-b{display: none;}
     .join_login{display: none;}
     .bottom{height: 400px;}
     .footer_bottom{height: 721px}
-    .footer_bottom-background-color{width:640px;}
-    .footer_text p{display: block;}
+    .footer_bottom-background-color{width:600px;}
+}
+@media(min-width:1024px){
+    .slide{margin-top: 0;}
+    .slide_p{display: none;}
+} 
+@media(min-width:1200px){
+    .content-5{display: none;}
+    .content-4{display: none;}
+    .content-3{width: 33.33%;}
+    .content-2{width: 33.33%;}
+    .content-1{width: 33.33%;}
+}
+@media(min-width:1440px){
+    .content-5{width: 20%; display: block;}
+    .content-4{width: 20%; display: block;}
+    .content-3{width: 20%;}
+    .content-2{width: 20%;}
+    .content-1{width: 20%;}
+    [class*="content-text--"] p{
+    font-size: 1.3rem;
+    margin-top: 5px;
+    float: left;
+    }
+    [class*="content-text--"] a {
+        font-size: 12px;
+        padding: 8px 12px 6px 12px;
+        float: right;
+        width: auto;
+        margin: 0;
+    }
+    [class*="content-text--"] {
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+    .bitbox_1{
+        height: 700px;
+    }
+    [class*="sbox_"]{
+        height: 350px;
+    }
 }
 
 
@@ -1264,15 +1274,4 @@ html,body{ height: 100%; box-sizing: border-box; font-style: "Vladimir Script"; 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.direction_right ,.direction_left{ display: none;}

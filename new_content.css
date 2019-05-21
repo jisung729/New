@@ -221,11 +221,13 @@ html,body{ height: 100%; box-sizing: border-box; overflow-x: hidden;}
     font-size: 16px;
 }
 /*스크립트 마우스롤 다운 850px 이하 시 top 30px으로 수정*/
+
 .hot2 {
     position: absolute; 
-    top: -30px;
+    width: 34px;
+    top: -26px;
     left: 20px;
-}
+  }
 
 .oo {
     position: absolute;
