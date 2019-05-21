@@ -198,6 +198,69 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
 #pos3:checked ~ .bullet label:nth-child(3),
 #pos4:checked ~ .bullet label:nth-child(4){background:#666;}
 /*= 1024 미만 상당메뉴바 반응형 적용되있음.*/
+
+/* 상단으로 올리는 버튼 애니메이션 코드 분석 40%정도 */
+  @keyframes spin {
+      to {
+        transform:rotateY(-360deg);
+      }
+    }
+  
+    @keyframes show {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flicker-on-2 {
+    0% {opacity: 0;}10% {opacity: 1;}15% {opacity: 0;}30% {opacity: 1;}55% {opacity: 1;}57% {opacity: 0;}75% {opacity: 0;}76% {opacity: 1;}99% {opacity: 0;}100% {opacity: 1;}
+  }
+    .component-wrapper {
+      position: absolute;
+      z-index: 8888;
+    }
+  
+    .scene {
+        position: fixed;
+        bottom: -20px;
+        right: -10px;
+        width: 6rem;
+        height: 6rem;
+        animation: flicker-on-2 1000ms linear 1500ms forwards;
+        opacity: 0;
+        z-index: 8887;
+    }
+  
+    .wrapper {
+      width:100%;
+      height:100%;
+      transform: rotateX(-8deg) rotateY(0deg);
+      transform-style: preserve-3d;
+    z-index: 8886;
+    }
+  
+    .globe {
+      position: relative;
+      width: 70%;
+      height: 70%;
+      margin:0 auto;
+      transform-style:  preserve-3d;
+      animation: spin 5s 0ms linear infinite;
+      z-index: 8885;
+    }
+    .ring {
+      width: 100%;
+      height: 100%;
+      border: 2px;
+      border-style: dotted;
+      border-radius: 50%;
+      color:red;
+      animation: show 0.75s forwards ease-in-out;
+      opacity: 0;
+      z-index: 8884;
+    }
+/* 상단으로 올리는 버튼 애니메이션 코드 분석 40%정도 */
+
 /*최상단 로그엔 바*/
 .join_login{
     position: relative;
@@ -248,9 +311,7 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
 }
 /*최상단 메뉴바들*/
 .width1024_w{display: none; }
-.nav-up {
-    top: -280px;
-  }
+
 .header_menu-w ul {position: relative;}
 
 .header_menu-w li{
@@ -509,7 +570,7 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
     z-index: 2000;
     background-color: #000000;
     top: 0;
-    transition: all 1s;
+    transition: all .5s ease-in-out;
 }
 /*스크립트 마우스롤 다운 850px 이하 시 top 30px으로 수정*/
 .hot2 {
@@ -575,17 +636,16 @@ a {text-decoration: none; color:inherit; margin: 0; padding: 0; bottom: 0; verti
 .shop{position: relative;}
 
 .remover_hover_backg{
-    position: absolute;
+    position: fixed;
     top: -500px;
-    left: 50%;
-    margin-left: -325px;
+    margin-left: -340px;
 }
 .add_hover_backg{
     display: block;
-    position: absolute;
-    top: 120px;
+    position: fixed;
+    top: 130px;
     left: 50%;
-    margin-left: -325px;
+    margin-left: -340px;
     width: 650px;
     background-color: rgba(255,255,255,0.8);
     border-radius: 4px;

@@ -50,7 +50,7 @@ document.getElementById("Search_input").onmouseover = function(){
     this.setAttribute("value","");
     this.style.color = "white";
 };
-
+// overflow-x: hidden; css에 이거 들어가있으면 동작 안함.
 $(window).scroll(function() {
 	var scroll_top = $(window).scrollTop();
   if(scroll_top > 50) {
@@ -60,7 +60,19 @@ $(window).scroll(function() {
 	}
 });
 
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.querySelector(".up_img").style.display = "block";
+  } else {
+    document.querySelector(".up_img").style.display = "none";
+  };
+};
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
 
 
