@@ -40,6 +40,10 @@ $(document).ready(function(){
             $('#hover_backg').addClass('remover_hover_backg').removeClass('add_hover_backg');
         };
     });
+    $("#hover_backg").mouseleave(function(){
+        $("#hover_backg").removeClass("add_hover_backg");
+        $('#hover_backg').addClass('remover_hover_backg');
+      });
 });
 
 
